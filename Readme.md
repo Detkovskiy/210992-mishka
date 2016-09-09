@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Юрий Детковский](https://up.htmlacademy.ru/adaptive/8/user/210992).
-* Наставник: `Неизвестно`.
+* Наставник: `Дмитрий Лебедев`.
 
 ---
 
