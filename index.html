@@ -20,9 +20,7 @@
       </nav>
     </header>
 
-    <section class="main-title">
-      <h1>Милые штучки ручной работы для дома</h1>
-    </section>
+    <h1 class="page-title page-title--main">Милые штучки ручной работы для дома</h1>
 
     <section class="charters">
       <div class="charter">
@@ -37,29 +35,27 @@
       <div class="item__wrapper">
         <header class="item__header">
           <h2 class="item__title">Вязанные корзинки</h2>
-          <a href="#" class="item__feature">Товар недели</a>
+          <span class="item__feature">Товар недели</span>
         </header>
-        <div class="item__content">
-          <p class="item__description">
-            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-          </p>
-          <table class="item__options">
-            <tr>
-              <td class="item__field">Цвет</td>
-              <td class="item__value">Тиффани/серый</td>
-            </tr>
-            <tr>
-              <td class="item__field">Диаметр</td>
-              <td class="item__value">25 см</td>
-            </tr>
-            <tr>
-              <td class="item__field">Высота</td>
-              <td class="item__value">15 см</td>
-            </tr>
-          </table>
-          <img class="item__image" src="img/knitted-baskets.jpg" width="" height="" alt="Вязанные корзинки">
-          <span class="item__price">Цена: 990 руб.</span>
-        </div>
+        <p class="item__description">
+          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+        </p>
+        <table class="item__options">
+          <tr>
+            <td class="item__field">Цвет</td>
+            <td class="item__value">Тиффани/серый</td>
+          </tr>
+          <tr>
+            <td class="item__field">Диаметр</td>
+            <td class="item__value">25 см</td>
+          </tr>
+          <tr>
+            <td class="item__field">Высота</td>
+            <td class="item__value">15 см</td>
+          </tr>
+        </table>
+        <img class="item__image" src="img/knitted-baskets.jpg" width="" height="" alt="Вязанные корзинки">
+        <span class="item__price">Цена: 990 руб.</span>
         <a href="#" class="btn  item__btn">Заказать</a>
       </div>
     </section>
@@ -92,17 +88,17 @@
       </div>
     </section>
 
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <h2 class="page-footer__title">Контакты</h2>
-        <table class="page-footer__contacts">
+    <section class="contact">
+      <div class="contact__wrapper">
+        <h2 class="contact__title">Контакты</h2>
+        <table class="contact__address">
             <tr>
-              <td class="page-footer__field">e-mail:</td>
-              <td class="page-footer__value">info@mimimishkashop.ru</td>
+              <td class="contact__field">e-mail:</td>
+              <td class="contact__value">info@mimimishkashop.ru</td>
             </tr>
             <tr>
-              <td class="page-footer__field">адрес:</td>
-              <td class="page-footer__value">
+              <td class="contact__field">адрес:</td>
+              <td class="contact__value">
                 г. Санкт-Петербург,<br>
                 ул. Большая Конюшенная, <br>
                 д. 19/8, офис 101</td>
@@ -110,21 +106,24 @@
           </table>
       </div>
       <div id="map" class="map"></div>
-      <a href="#" class="btn  page-footer__btn">Напишите нам</a>
+      <a href="#" class="btn  contact__btn">Напишите нам</a>
+    </section>
+
+    <footer class="page-footer">
       <p class="page-footer__social">
         <span class="social-list">
-          <a href="#" class="social-link social-link--in">Мы в Инстаграмме</a>
-          <a href="#" class="social-link social-link--fb">Мы в Фейсбуке</a>
-          <a href="#" class="social-link social-link--tw">Мы в Твиттере</a>
+          <a href="#" class="social-link  social-link--in">Мы в Инстаграмме</a>
+          <a href="#" class="social-link  social-link--fb">Мы в Фейсбуке</a>
+          <a href="#" class="social-link  social-link--tw">Мы в Твиттере</a>
         </span>
       </p>
       <p class="page-footer__copiyright">
         Разработано
-        <a href="" class="page-footer__copiyright-link">HTML Academy</a>
+        <a href="#" class="page-footer__copiyright-link">HTML Academy</a>
       </p>
     </footer>
 
-    <div class="modal-add-cart modal-add-cart--hidden" id="modal-add-cart">
+    <div class="modal-add-cart  modal-add-cart--hidden" id="modal-add-cart">
       <div class="modal-add-cart__wrapper">
         <p class="modal-add-cart__title">Добавить в корзину</p>
         <div class="size-item">
@@ -133,7 +132,7 @@
           <a href="#" class="size-item">M</a>
           <a href="#" class="size-item">L</a>
         </div>
-        <button class="btn modal-add-cart__btn" type="button">Добавить</button>
+        <button class="btn  modal-add-cart__btn" type="button">Добавить</button>
       </div>
     </div>
 
