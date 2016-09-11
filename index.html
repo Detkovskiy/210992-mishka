@@ -6,21 +6,22 @@
   </head>
   <body>
 
-    <header class="page-header">
-      <div class="page-header__logo">
-        <img src="img/logo.png" width="" height="" alt="Мишка">
-      </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="#">Вязяние на заказ</a></li>
-          <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
-          <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="container">
 
-    <section class="container">
+      <header class="page-header">
+        <div class="page-header__logo">
+          <img src="img/logo.png" width="" height="" alt="Мишка">
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
+            <li class="main-nav__item"><a href="#">Вязяние на заказ</a></li>
+            <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
+            <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+          </ul>
+        </nav>
+      </header>
+
       <h1 class="page-title page-title--main">Милые штучки ручной работы для дома</h1>
 
       <ul class="charters">
@@ -93,41 +94,40 @@
             <dd class="contact__value">
               г. Санкт-Петербург,<br>
               ул. Большая Конюшенная, <br>
-              д. 19/8, офис 101</td>
+              д. 19/8, офис 101
             </dd>
           </dl>
         </div>
         <div id="map" class="map"></div>
         <a href="#" class="btn  contact__btn">Напишите нам</a>
       </section>
-    </section>
 
-    <footer class="page-footer">
-      <p class="page-footer__social">
-        <span class="social-list">
-          <a href="#" class="social-link  social-link--in">Мы в Инстаграмме</a>
-          <a href="#" class="social-link  social-link--fb">Мы в Фейсбуке</a>
-          <a href="#" class="social-link  social-link--tw">Мы в Твиттере</a>
-        </span>
-      </p>
-      <p class="page-footer__copiyright">
-        Разработано
-        <a href="#" class="page-footer__copiyright-link">HTML Academy</a>
-      </p>
-    </footer>
+      <footer class="page-footer">
+        <p class="page-footer__social">
+          <span class="social-list">
+            <a href="#" class="social-link  social-link--in">Мы в Инстаграмме</a>
+            <a href="#" class="social-link  social-link--fb">Мы в Фейсбуке</a>
+            <a href="#" class="social-link  social-link--tw">Мы в Твиттере</a>
+          </span>
+        </p>
+        <p class="page-footer__copiyright">
+          Разработано
+          <a href="#" class="page-footer__copiyright-link">HTML Academy</a>
+        </p>
+      </footer>
 
-    <div class="modal-add-cart  modal-add-cart--hidden" id="modal-add-cart">
-      <div class="modal-add-cart__wrapper">
-        <p class="modal-add-cart__title">Добавить в корзину</p>
-        <div class="size-item">
-          <span class="size-item__title">Выберите размер:</span>
-          <a href="#" class="size-item  size-item--active">S</a>
-          <a href="#" class="size-item">M</a>
-          <a href="#" class="size-item">L</a>
+      <div class="modal-add-cart  modal-add-cart--hidden" id="modal-add-cart">
+        <div class="modal-add-cart__wrapper">
+          <p class="modal-add-cart__title">Добавить в корзину</p>
+          <div class="size-item">
+            <span class="size-item__title">Выберите размер:</span>
+            <a href="#" class="size-item  size-item--active">S</a>
+            <a href="#" class="size-item">M</a>
+            <a href="#" class="size-item">L</a>
+          </div>
+          <button class="btn  modal-add-cart__btn" type="button">Добавить</button>
         </div>
-        <button class="btn  modal-add-cart__btn" type="button">Добавить</button>
       </div>
     </div>
-
   </body>
 </html>

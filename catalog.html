@@ -6,79 +6,81 @@
   </head>
   <body>
 
-    <header class="page-header">
-      <div class="page-header__logo">
-        <img src="img/logo.png" width="" height="" alt="Мишка">
-      </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="#">Вязяние на заказ</a></li>
-          <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
-          <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
-        </ul>
-      </nav>
-    </header>
+    <div class="container">
 
-    <h1 class="page-title">Каталог товаров</h1>
-
-    <section class="catalog-items">
-      <div class="catalog-items__wrapper">
-        <article class="catalog-item">
-          <img class="catalog-item__image" src="img/catalog/bunny.jpg" width="260px" height="195px" alt="Зайчик-попрыгайчик">
-          <span class="catalog-item__title">Зайчик-попрыгайчик</span>
-          <span class="catalog-item__description">Рост 30см, вес 200г</span>
-          <span class="catalog-item__price">1 200 руб.</span>
-        </article>
-        <article class="catalog-item">
-          <img class="catalog-item__image" src="img/catalog/basket.jpg" width="260px" height="195px" alt="Корзинка для белья">
-          <span class="catalog-item__title">Корзинка для белья</span>
-          <span class="catalog-item__description">Диаметр 15см, высота 10см</span>
-          <span class="catalog-item__price">690 руб.</span>
-        </article>
-        <article class="catalog-item">
-          <img class="catalog-item__image" src="img/catalog/big-basket.jpg" width="260px" height="195px" alt="Большая корзинка для игрушек">
-          <span class="catalog-item__title">Большая корзинка для игрушек</span>
-          <span class="catalog-item__description">Диаметр 30см, высота 30см</span>
-          <span class="catalog-item__price">1 500 руб.</span>
-        </article>
-        <article class="info-block">
-          <h2 class="info-block__title">Процесс производства</h2>
-          <video width="260px" controls="" src="video/production.mp4"></video>
-          <p class="info-block__description">
-            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-          </p>
-          <a href="#" class="btn  info-block__order">Заказать</a>
-        </article>
-      </div>
-    </section>
-
-    <footer class="page-footer">
-      <p class="page-footer__social">
-        <span class="social-list">
-          <a href="#" class="social-link  social-link--in">Мы в Инстаграмме</a>
-          <a href="#" class="social-link  social-link--fb">Мы в Фейсбуке</a>
-          <a href="#" class="social-link  social-link--tw">Мы в Твиттере</a>
-        </span>
-      </p>
-      <p class="page-footer__copiyright">
-        Разработано
-        <a href="#" class="page-footer__copiyright-link">HTML Academy</a>
-      </p>
-    </footer>
-
-    <div class="modal-add-cart  modal-add-cart--hidden" id="modal-add-cart">
-      <div class="modal-add-cart__wrapper">
-        <p class="modal-add-cart__title">Добавить в корзину</p>
-        <div class="size-item">
-          <span class="size-item__title">Выберите размер:</span>
-          <a href="#" class="size-item  size-item--active">S</a>
-          <a href="#" class="size-item">M</a>
-          <a href="#" class="size-item">L</a>
+      <header class="page-header">
+        <div class="page-header__logo">
+          <img src="img/logo.png" width="" height="" alt="Мишка">
         </div>
-        <button class="btn  modal-add-cart__btn" type="button">Добавить</button>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
+            <li class="main-nav__item"><a href="#">Вязяние на заказ</a></li>
+            <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
+            <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <h1 class="page-title">Каталог товаров</h1>
+
+      <section class="catalog-items">
+        <div class="catalog-items__wrapper">
+          <article class="catalog-item">
+            <img class="catalog-item__image" src="img/catalog/bunny.jpg" width="260px" height="195px" alt="Зайчик-попрыгайчик">
+            <span class="catalog-item__title">Зайчик-попрыгайчик</span>
+            <span class="catalog-item__description">Рост 30см, вес 200г</span>
+            <span class="catalog-item__price">1 200 руб.</span>
+          </article>
+          <article class="catalog-item">
+            <img class="catalog-item__image" src="img/catalog/basket.jpg" width="260px" height="195px" alt="Корзинка для белья">
+            <span class="catalog-item__title">Корзинка для белья</span>
+            <span class="catalog-item__description">Диаметр 15см, высота 10см</span>
+            <span class="catalog-item__price">690 руб.</span>
+          </article>
+          <article class="catalog-item">
+            <img class="catalog-item__image" src="img/catalog/big-basket.jpg" width="260px" height="195px" alt="Большая корзинка для игрушек">
+            <span class="catalog-item__title">Большая корзинка для игрушек</span>
+            <span class="catalog-item__description">Диаметр 30см, высота 30см</span>
+            <span class="catalog-item__price">1 500 руб.</span>
+          </article>
+          <article class="info-block">
+            <h2 class="info-block__title">Процесс производства</h2>
+            <video width="260px" controls="" src="video/production.mp4"></video>
+            <p class="info-block__description">
+              По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+            </p>
+            <a href="#" class="btn  info-block__order">Заказать</a>
+          </article>
+        </div>
+      </section>
+
+      <footer class="page-footer">
+        <p class="page-footer__social">
+          <span class="social-list">
+            <a href="#" class="social-link  social-link--in">Мы в Инстаграмме</a>
+            <a href="#" class="social-link  social-link--fb">Мы в Фейсбуке</a>
+            <a href="#" class="social-link  social-link--tw">Мы в Твиттере</a>
+          </span>
+        </p>
+        <p class="page-footer__copiyright">
+          Разработано
+          <a href="#" class="page-footer__copiyright-link">HTML Academy</a>
+        </p>
+      </footer>
+
+      <div class="modal-add-cart  modal-add-cart--hidden" id="modal-add-cart">
+        <div class="modal-add-cart__wrapper">
+          <p class="modal-add-cart__title">Добавить в корзину</p>
+          <div class="size-item">
+            <span class="size-item__title">Выберите размер:</span>
+            <a href="#" class="size-item  size-item--active">S</a>
+            <a href="#" class="size-item">M</a>
+            <a href="#" class="size-item">L</a>
+          </div>
+          <button class="btn  modal-add-cart__btn" type="button">Добавить</button>
+        </div>
       </div>
     </div>
-
   </body>
 </html>
