@@ -26,74 +26,74 @@
 
       <section class="page-order">
         <form action="#" class="form-order">
-          <p class="page-order__text page-order__text--top">
+          <p class="page-order__text  page-order__text--top">
             Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
           </p>
-          <fieldset class="form-order__group-border">
-            <legend class="form-order__group-title">Тип</legend>
-            <label class="form-order__group-item">
-              <input class="form-order__radio" type="radio" name="type" checked>
-              <span class="form-order__radio-indicator"></span>Аксессуар для интерьера
+          <fieldset class="radio-btn__group-border">
+            <legend class="radio-btn__group-title">Тип</legend>
+            <label class="radio-btn__label">
+              <input class="radio-btn__input" type="radio" name="type" checked>
+              <span class="radio-btn__indicator"></span>Аксессуар для интерьера
             </label>
-            <label class="form-order__group-item">
-              <input class="form-order__radio" type="radio" name="type">
-              <span class="form-order__radio-indicator"></span>Детская игрушка
-            </label>
-          </fieldset>
-
-          <fieldset class="form-order__group-border">
-            <legend class="form-order__group-title">Цвет</legend>
-            <label class="form-order__group-item">
-              <input class="form-order__checkbox" type="checkbox" name="white" checked>
-              <span class="form-order__checkbox-indicator"></span>Белый
-            </label>
-            <label class="form-order__group-item">
-              <input class="form-order__checkbox" type="checkbox" name="gray" checked>
-              <span class="form-order__checkbox-indicator"></span>Серый
-            </label>
-            <label class="form-order__group-item">
-              <input class="form-order__checkbox" type="checkbox" name="tiffany">
-              <span class="form-order__checkbox-indicator"></span>Тиффани
-            </label>
-            <label class="form-order__group-item">
-              <input class="form-order__checkbox" type="checkbox" name="black">
-              <span class="form-order__checkbox-indicator"></span>Черный
-            </label>
-            <label class="form-order__group-item">
-              <input class="form-order__checkbox" type="checkbox" name="pink">
-              <span class="form-order__checkbox-indicator"></span>Розовый
-            </label>
-            <label class="form-order__group-item">
-              <input class="form-order__checkbox" type="checkbox" name="orange">
-              <span class="form-order__checkbox-indicator"></span>Оранжевый
+            <label class="radio-btn__label">
+              <input class="radio-btn__input" type="radio" name="type">
+              <span class="radio-btn__indicator"></span>Детская игрушка
             </label>
           </fieldset>
 
-          <fieldset class="form-order__group-border">
-            <legend class="form-order__group-title">ФИО</legend>
-            <label class="form-order__group-item">Имя:
-              <input class="form-order__text" type="text" placeholder="Введите ваше имя" name="name" required>
+          <fieldset class="checkbox__group-border">
+            <legend class="checkbox__group-title">Цвет</legend>
+            <label class="checkbox__label">
+              <input class="checkbox__input" type="checkbox" name="white" checked>
+              <span class="checkbox__indicator"></span>Белый
             </label>
-            <label class="form-order__group-item">Фамилия:
-              <input class="form-order__text" type="text" placeholder="Укажите фамилию" name="surname" required>
+            <label class="checkbox__label">
+              <input class="checkbox__input" type="checkbox" name="gray" checked>
+              <span class="checkbox__indicator"></span>Серый
             </label>
-            <label class="form-order__group-item">Отчество:
-              <input class="form-order__text" type="text" placeholder="Отчество, если желаете" name="patronymic" required>
+            <label class="checkbox__label">
+              <input class="checkbox__input" type="checkbox" name="tiffany">
+              <span class="checkbox__indicator"></span>Тиффани
+            </label>
+            <label class="checkbox__label">
+              <input class="checkbox__input" type="checkbox" name="black">
+              <span class="checkbox__indicator"></span>Черный
+            </label>
+            <label class="checkbox__label">
+              <input class="checkbox__input" type="checkbox" name="pink">
+              <span class="checkbox__indicator"></span>Розовый
+            </label>
+            <label class="checkbox__label">
+              <input class="checkbox__input" type="checkbox" name="orange">
+              <span class="checkbox__indicator"></span>Оранжевый
             </label>
           </fieldset>
 
-          <label class="form-order__item">ТЕЛ
-            <input class="form-order__tel" type="tel" placeholder="+7 XXX XX XX" name="tel" required>
+          <fieldset class="text-field__group-border">
+            <legend class="text-field__group-title">ФИО</legend>
+            <label class="text-field__label">Имя:
+              <input class="text-field__input" type="text" placeholder="Введите ваше имя" name="name" required>
+            </label>
+            <label class="text-field__label">Фамилия:
+              <input class="text-field__input" type="text" placeholder="Укажите фамилию" name="surname" required>
+            </label>
+            <label class="text-field__label">Отчество:
+              <input class="text-field__input" type="text" placeholder="Отчество, если желаете" name="patronymic" required>
+            </label>
+          </fieldset>
+
+          <label class="text-field__label  text-field__label--green">ТЕЛ
+            <input class="text-field__input" type="tel" placeholder="+7 XXX XX XX" name="tel" required>
           </label>
-          <label class="form-order__item">E-MAIL
-            <input class="form-order__email" type="email" placeholder="Ваш Email" name="email" required>
+          <label class="text-field__label  text-field__label--green">E-MAIL
+            <input class="text-field__input" type="email" placeholder="Ваш Email" name="email" required>
           </label>
-          <label class="form-order__item">ДОП
-            <textarea class="form-order__textarea" name="message" placeholder="Опишите все ваши пожелания к заказу" cols="30" rows="10" required></textarea>
+          <label class="text-field__label  text-field__label--green">ДОП
+            <textarea class="text-field__textarea" name="message" placeholder="Опишите все ваши пожелания к заказу" cols="30" rows="10" required></textarea>
           </label>
 
-          <p class="page-order__text page-order__text--bottom">Все поля обязательны для заполнения</p>
-          <button type="submit" class="btn form-order__btn">Отправить заказ</button>
+          <p class="page-order__text  page-order__text--bottom">Все поля обязательны для заполнения</p>
+          <button type="submit" class="btn page-order__btn">Отправить заказ</button>
         </form>
       </section>
 

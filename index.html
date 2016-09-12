@@ -33,16 +33,16 @@
         </li>
       </ul>
 
-      <section class="item">
-        <div class="item__wrapper">
-          <header class="item__header">
-            <h2 class="item__title">Вязанные корзинки</h2>
-            <span class="item__feature">Товар недели</span>
+      <section class="product-item">
+        <div class="product-item__wrapper">
+          <header class="product-item__header">
+            <h2 class="product-item__title">Вязанные корзинки</h2>
+            <span class="product-item__feature">Товар недели</span>
           </header>
-          <p class="item__description">
+          <p class="product-item__description">
             Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
           </p>
-          <dl class="item__options">
+          <dl class="product-item__options">
             <dt class="contact__field">Цвет</dt>
             <dd class="contact__value">Тиффани/серый</dd>
             <dt class="contact__field">Диаметр</dt>
@@ -50,9 +50,9 @@
             <dt class="contact__field">Высота</dt>
             <dd class="contact__value">15 см</dd>
           </dl>
-          <img class="item__image" src="img/knitted-baskets.jpg" width="" height="" alt="Вязанные корзинки">
-          <span class="item__price">Цена: 990 руб.</span>
-          <a href="#" class="btn  item__btn">Заказать</a>
+          <img class="product-item__image" src="img/knitted-baskets.jpg" width="" height="" alt="Вязанные корзинки">
+          <span class="product-item__price">Цена: 990 руб.</span>
+          <a href="#" class="btn  product-itemm__btn">Заказать</a>
         </div>
       </section>
 
@@ -119,12 +119,19 @@
       <div class="modal-add-cart  modal-add-cart--hidden" id="modal-add-cart">
         <div class="modal-add-cart__wrapper">
           <p class="modal-add-cart__title">Добавить в корзину</p>
-          <div class="size-item">
-            <span class="size-item__title">Выберите размер:</span>
-            <a href="#" class="size-item  size-item--active">S</a>
-            <a href="#" class="size-item">M</a>
-            <a href="#" class="size-item">L</a>
-          </div>
+          <span class="modal-add-cart__option">Выберите размер:</span>
+          <label class="size-item">
+            <input class="size-item__radio" type="radio" name="size" checked>
+            <span class="size-item__radio-indicator"></span>S
+          </label>
+          <label class="size-item">
+            <input class="size-item__radio" type="radio" name="size">
+            <span class="size-item__radio-indicator"></span>M
+          </label>
+          <label class="size-item">
+            <input class="size-item__radio" type="radio" name="size">
+            <span class="size-item__radio-indicator"></span>L
+          </label>
           <button class="btn  modal-add-cart__btn" type="button">Добавить</button>
         </div>
       </div>
