@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <header class="page-header">
+        <div class="page-header__logo">
+          <img src="img/logo.png" width="" height="" alt="Мишка">
+        </div>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
+            <li class="main-nav__item"><a href="#">Вязяние на заказ</a></li>
+            <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
+            <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <h1 class="page-title">Вязяние на заказ</h1>
+
+      <section class="page-order">
+        <form action="#" class="form-order">
+          <p class="form-order__text  form-order__text--top">
+            Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+          </p>
+          <fieldset class="radio-btn__group-border">
+            <legend class="radio-btn__group-title">Тип</legend>
+            <label class="radio-btn__label">
+              <input class="radio-btn__input" type="radio" name="type" checked>
+              <span class="radio-btn__indicator"></span>Аксессуар для интерьера
+            </label>
+            <label class="radio-btn__label">
+              <input class="radio-btn__input" type="radio" name="type">
+              <span class="radio-btn__indicator"></span>Детская игрушка
+            </label>
+          </fieldset>
+
+          <fieldset class="checkbox__group-border">
+            <legend class="checkbox__group-title">Цвет</legend>
+            <label class="checkbox__label">
+              <input class="checkbox__input" type="checkbox" name="white" checked>
+              <span class="checkbox__indicator"></span>Белый
+            </label>
+            <label class="checkbox__label">
+              <input class="checkbox__input" type="checkbox" name="gray" checked>
+              <span class="checkbox__indicator"></span>Серый
+            </label>
+            <label class="checkbox__label">
+              <input class="checkbox__input" type="checkbox" name="tiffany">
+              <span class="checkbox__indicator"></span>Тиффани
+            </label>
+            <label class="checkbox__label">
+              <input class="checkbox__input" type="checkbox" name="black">
+              <span class="checkbox__indicator"></span>Черный
+            </label>
+            <label class="checkbox__label">
+              <input class="checkbox__input" type="checkbox" name="pink">
+              <span class="checkbox__indicator"></span>Розовый
+            </label>
+            <label class="checkbox__label">
+              <input class="checkbox__input" type="checkbox" name="orange">
+              <span class="checkbox__indicator"></span>Оранжевый
+            </label>
+          </fieldset>
+
+          <fieldset class="text-field__group-border">
+            <legend class="text-field__group-title">ФИО</legend>
+            <label class="text-field__label">Имя:
+              <input class="text-field__input" type="text" placeholder="Введите ваше имя" name="name" required>
+            </label>
+            <label class="text-field__label">Фамилия:
+              <input class="text-field__input" type="text" placeholder="Укажите фамилию" name="surname" required>
+            </label>
+            <label class="text-field__label">Отчество:
+              <input class="text-field__input" type="text" placeholder="Отчество, если желаете" name="patronymic" required>
+            </label>
+          </fieldset>
+
+          <label class="text-field__label  text-field__label--green">ТЕЛ
+            <input class="text-field__input" type="tel" placeholder="+7 XXX XX XX" name="tel" required>
+          </label>
+          <label class="text-field__label  text-field__label--green">E-MAIL
+            <input class="text-field__input" type="email" placeholder="Ваш Email" name="email" required>
+          </label>
+          <label class="text-field__label  text-field__label--green">ДОП
+            <textarea class="text-field__textarea" name="message" placeholder="Опишите все ваши пожелания к заказу" cols="30" rows="10" required></textarea>
+          </label>
+
+          <p class="form-order__text  form-order__text--bottom">Все поля обязательны для заполнения</p>
+          <button type="submit" class="btn  btn--form-order">Отправить заказ</button>
+        </form>
+      </section>
+
+      <footer class="page-footer">
+        <ul class="social-block">
+          <li class="social-block__icon">
+            <a href="#" class="social-block__link  social-block__link--in">Мы в Инстаграмме</a>
+          </li>
+          <li class="social-block__icon">
+            <a href="#" class="social-block__link  social-block__link--fb">Мы в Фейсбуке</a>
+          </li>
+          <li class="social-block__icon">
+            <a href="#" class="social-block__link  social-block__link--tw">Мы в Твиттере</a>
+          </li>
+        </ul>
+        <p class="page-footer__copiyright">
+          Разработано
+          <a href="#" class="page-footer__copiyright-link">HTML Academy</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
