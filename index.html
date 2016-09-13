@@ -103,13 +103,17 @@
       </section>
 
       <footer class="page-footer">
-        <p class="page-footer__social">
-          <span class="social-list">
-            <a href="#" class="social-link  social-link--in">Мы в Инстаграмме</a>
-            <a href="#" class="social-link  social-link--fb">Мы в Фейсбуке</a>
-            <a href="#" class="social-link  social-link--tw">Мы в Твиттере</a>
-          </span>
-        </p>
+        <ul class="social-block">
+          <li class="social-block__icon">
+            <a href="#" class="social-block__link  social-block__link--in">Мы в Инстаграмме</a>
+          </li>
+          <li class="social-block__icon">
+            <a href="#" class="social-block__link  social-block__link--fb">Мы в Фейсбуке</a>
+          </li>
+          <li class="social-block__icon">
+            <a href="#" class="social-block__link  social-block__link--tw">Мы в Твиттере</a>
+          </li>
+        </ul>
         <p class="page-footer__copiyright">
           Разработано
           <a href="#" class="page-footer__copiyright-link">HTML Academy</a>
@@ -120,19 +124,21 @@
         <div class="modal-add-cart__wrapper">
           <p class="modal-add-cart__title">Добавить в корзину</p>
           <span class="modal-add-cart__option">Выберите размер:</span>
-          <label class="size-item">
-            <input class="size-item__radio" type="radio" name="size" checked>
-            <span class="size-item__radio-indicator"></span>S
-          </label>
-          <label class="size-item">
-            <input class="size-item__radio" type="radio" name="size">
-            <span class="size-item__radio-indicator"></span>M
-          </label>
-          <label class="size-item">
-            <input class="size-item__radio" type="radio" name="size">
-            <span class="size-item__radio-indicator"></span>L
-          </label>
-          <button class="btn  modal-add-cart__btn" type="button">Добавить</button>
+          <form action="#" class="size-select">
+            <label class="size-item">
+              <input class="size-item__radio" type="radio" name="size" checked>
+              <span class="size-item__radio-indicator"></span>S
+            </label>
+            <label class="size-item">
+              <input class="size-item__radio" type="radio" name="size">
+              <span class="size-item__radio-indicator"></span>M
+            </label>
+            <label class="size-item">
+              <input class="size-item__radio" type="radio" name="size">
+              <span class="size-item__radio-indicator"></span>L
+            </label>
+            <button class="btn  btn--size-select" type="submit">Добавить</button>
+          </form>
         </div>
       </div>
     </div>
