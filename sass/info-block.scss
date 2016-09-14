@@ -1,1 +1,35 @@
-body { background: blue; }
+.info-block {
+  border: solid 1px #ededed;
+}
+
+.info-block__title {
+  position: relative;
+  padding: 10px 0;
+  padding-left: 90px;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000;
+
+  &::before {
+    position: absolute;
+    content:"";
+    left: 30px;
+    display: inline-block;
+    vertical-align: top;
+    width: 40px;
+    height: 40px;
+    background: url("../img/icon-video.svg") no-repeat center;
+  }
+}
+
+.info-block__wrapper {
+  padding: 30px 30px;
+}
+
+.info-block__description {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #444444;
+}

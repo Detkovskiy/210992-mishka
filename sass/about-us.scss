@@ -1,1 +1,53 @@
-body { background: blue; }
+.about-us {
+
+}
+
+.about-us__wrapper {
+  padding: 30px 30px;
+}
+
+.about-us__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000;
+}
+
+.about-us__list {
+  padding: 0;
+  list-style: none;
+
+}
+
+.about-us__item {
+  padding-top: 50px;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000;
+
+  &--material {
+    background: url("../img/icon-feature-1.svg") no-repeat 7px 5px;
+  }
+
+  &--style {
+    background: url("../img/icon-feature-3.svg") no-repeat 0px 13px;
+  }
+
+  &--like {
+    background: url("../img/icon-feature-5.svg") no-repeat 7px 13px;
+  }
+
+  &--handmade {
+    background: url("../img/icon-feature-2.svg") no-repeat 7px 13px;
+  }
+
+  &--manufacturer {
+    background: url("../img/icon-feature-4.svg") no-repeat 0px 13px;
+  }
+
+  &--wrap {
+    background: url("../img/icon-feature-6.svg") no-repeat 7px 13px;
+  }
+
+}

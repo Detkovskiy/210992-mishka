@@ -1,1 +1,8 @@
-body { background: blue; }
+
+
+
+.main-nav {
+  &--closed {
+    display: none;
+  }
+}

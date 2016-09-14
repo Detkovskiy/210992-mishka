@@ -1,1 +1,28 @@
-body { background: blue; }
+.page-footer {
+  background: #f1f1f1;
+}
+
+.page-footer__wrapper {
+  padding: 30px 30px;
+}
+
+.page-footer__copiyright {
+  margin-bottom: 0;
+  font-size: 19px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #000;
+  text-align: center;
+
+}
+
+.page-footer__copiyright-link {
+  margin-left: 30px;
+  width: 27px;
+  height: 34px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+  background: url("../img/logo-htmlacademy.svg") no-repeat center;
+
+}

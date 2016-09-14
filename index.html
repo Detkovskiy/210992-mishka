@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic,cyrillic-ext" rel="stylesheet">
   </head>
   <body>
 
@@ -11,9 +12,9 @@
 
       <header class="page-header">
         <div class="page-header__logo">
-          <img src="img/logo.png" width="" height="" alt="Мишка">
+          <img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка">
         </div>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
             <li class="main-nav__item"><a href="#">Вязяние на заказ</a></li>
@@ -23,14 +24,14 @@
         </nav>
       </header>
 
-      <h1 class="page-title page-title--main">Милые штучки ручной работы для дома</h1>
+      <h1 class="page-title page-title--main">Милые штучки ручной <br> работы для дома</h1>
 
-      <ul class="charters">
-        <li class="charter">
-          <a href="#" class="charter__link  charter__link--interior">Предметы интерьера</a>
+      <ul class="charters  charters--position">
+        <li class="charter  charter--interior">
+          <a href="#" class="charter__link  charter__link--interior">Предметы <br> интерьера</a>
         </li>
-        <li class="charter">
-          <a href="#" class="charter__link  charter__link--toy">Детские игрушки</a>
+        <li class="charter  charter--toy">
+          <a href="catalog.html" class="charter__link  charter__link--toy">Детские <br> игрушки</a>
         </li>
       </ul>
 
@@ -44,14 +45,14 @@
             Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
           </p>
           <dl class="product-item__options">
-            <dt class="contact__field">Цвет</dt>
-            <dd class="contact__value">Тиффани/серый</dd>
-            <dt class="contact__field">Диаметр</dt>
-            <dd class="contact__value">25 см</dd>
-            <dt class="contact__field">Высота</dt>
-            <dd class="contact__value">15 см</dd>
+            <dt class="product-item__field">Цвет:</dt>
+            <dd class="product-item__value">Тиффани/серый</dd>
+            <dt class="product-item__field">Диаметр:</dt>
+            <dd class="product-item__value">25 см</dd>
+            <dt class="product-item__field">Высота:</dt>
+            <dd class="product-item__value">15 см</dd>
           </dl>
-          <img class="product-item__image" src="img/knitted-baskets.jpg" width="" height="" alt="Вязанные корзинки">
+          <img class="product-item__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязанные корзинки">
           <span class="product-item__price">Цена: 990 руб.</span>
           <a href="#" class="btn  product-itemm__btn">Заказать</a>
         </div>
@@ -79,8 +80,8 @@
           </p>
           <cite class="reviews__autor-name">Анастасия Красильникова</cite>
           <a href="#" class="reviews__autor-link">@misssssiskras</a>
-          <button class="reviews__prev" type="button">Назад</button>
-          <button class="reviews__next" type="button">Вперед</button>
+          <button class="reviews__arrow  reviews__arrow--prev" type="button">Назад</button>
+          <button class="reviews__arrow  reviews__arrow--next" type="button">Вперед</button>
           <a href="#" class="btn  reviews__btn">Написать</a>
         </div>
       </section>
@@ -90,7 +91,7 @@
           <h2 class="contact__title">Контакты</h2>
           <dl class="contact__address">
             <dt class="contact__field">e-mail:</dt>
-            <dd class="contact__value">info@mimimishkashop.ru</dd>
+            <dd class="contact__value"><a class="contact__mail-link" href="#">info@mimimishkashop.ru</a></dd>
             <dt class="contact__field">адрес:</dt>
             <dd class="contact__value">
               г. Санкт-Петербург,<br>
@@ -100,30 +101,34 @@
           </dl>
         </div>
         <div id="map" class="map"></div>
-        <a href="#" class="btn  contact__btn">Напишите нам</a>
+        <div class="contact__wrapper">
+          <a href="#" class="btn  contact__btn">Напишите нам</a>
+        </div>
       </section>
 
       <footer class="page-footer">
-        <ul class="social-block">
-          <li class="social-block__icon">
-            <a href="#" class="social-block__link  social-block__link--in">Мы в Инстаграмме</a>
-          </li>
-          <li class="social-block__icon">
-            <a href="#" class="social-block__link  social-block__link--fb">Мы в Фейсбуке</a>
-          </li>
-          <li class="social-block__icon">
-            <a href="#" class="social-block__link  social-block__link--tw">Мы в Твиттере</a>
-          </li>
-        </ul>
-        <p class="page-footer__copiyright">
-          Разработано
-          <a href="#" class="page-footer__copiyright-link">HTML Academy</a>
-        </p>
+        <div class="page-footer__wrapper">
+          <ul class="social-block">
+            <li class="social-block__icon">
+              <a href="#" class="social-block__link  social-block__link--in">Мы в Инстаграмме</a>
+            </li>
+            <li class="social-block__icon">
+              <a href="#" class="social-block__link  social-block__link--fb">Мы в Фейсбуке</a>
+            </li>
+            <li class="social-block__icon">
+              <a href="#" class="social-block__link  social-block__link--tw">Мы в Твиттере</a>
+            </li>
+          </ul>
+          <p class="page-footer__copiyright">
+            Разработано
+            <a href="#" class="page-footer__copiyright-link">HTML Academy</a>
+          </p>
+        </div>
       </footer>
 
       <div class="modal-add-cart  modal-add-cart--hidden" id="modal-add-cart">
         <div class="modal-add-cart__wrapper">
-          <p class="modal-add-cart__title">Добавить в корзину</p>
+          <p class="modal-add-cart__title">Добавить <br> в корзину</p>
           <span class="modal-add-cart__option">Выберите размер:</span>
           <form action="#" class="size-select">
             <label class="size-item">
@@ -143,5 +148,7 @@
         </div>
       </div>
     </div>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="js/map.js"></script>
   </body>
 </html>

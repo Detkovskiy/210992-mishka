@@ -1,1 +1,25 @@
-body { background: blue; }
+.modal-add-cart {
+  width: 320px;
+  height: 337px;
+  text-align: center;
+}
+
+.modal-add-cart__wrapper {
+  padding: 30px 30px;
+}
+
+.modal-add-cart__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.modal-add-cart__option {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+}
+

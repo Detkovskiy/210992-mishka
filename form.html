@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic,cyrillic-ext" rel="stylesheet">
   </head>
   <body>
 
@@ -10,9 +12,9 @@
 
       <header class="page-header">
         <div class="page-header__logo">
-          <img src="img/logo.png" width="" height="" alt="Мишка">
+          <img src="img/logo-mobile.svg" width="" height="" alt="Мишка">
         </div>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
             <li class="main-nav__item"><a href="#">Вязяние на заказ</a></li>
@@ -22,7 +24,7 @@
         </nav>
       </header>
 
-      <h1 class="page-title">Вязяние на заказ</h1>
+      <h1 class="page-title  page-title--form">Вязяние на заказ</h1>
 
       <section class="page-order">
         <form action="#" class="form-order">
@@ -85,7 +87,7 @@
           <label class="text-field__label  text-field__label--green">ТЕЛ
             <input class="text-field__input" type="tel" placeholder="+7 XXX XX XX" name="tel" required>
           </label>
-          <label class="text-field__label  text-field__label--green">E-MAIL
+          <label class="text-field__label  text-field__label--green-email">E-MAIL
             <input class="text-field__input" type="email" placeholder="Ваш Email" name="email" required>
           </label>
           <label class="text-field__label  text-field__label--green">ДОП
@@ -97,21 +99,23 @@
       </section>
 
       <footer class="page-footer">
-        <ul class="social-block">
-          <li class="social-block__icon">
-            <a href="#" class="social-block__link  social-block__link--in">Мы в Инстаграмме</a>
-          </li>
-          <li class="social-block__icon">
-            <a href="#" class="social-block__link  social-block__link--fb">Мы в Фейсбуке</a>
-          </li>
-          <li class="social-block__icon">
-            <a href="#" class="social-block__link  social-block__link--tw">Мы в Твиттере</a>
-          </li>
-        </ul>
-        <p class="page-footer__copiyright">
-          Разработано
-          <a href="#" class="page-footer__copiyright-link">HTML Academy</a>
-        </p>
+        <div class="page-footer__wrapper">
+          <ul class="social-block">
+            <li class="social-block__icon">
+              <a href="#" class="social-block__link  social-block__link--in">Мы в Инстаграмме</a>
+            </li>
+            <li class="social-block__icon">
+              <a href="#" class="social-block__link  social-block__link--fb">Мы в Фейсбуке</a>
+            </li>
+            <li class="social-block__icon">
+              <a href="#" class="social-block__link  social-block__link--tw">Мы в Твиттере</a>
+            </li>
+          </ul>
+          <p class="page-footer__copiyright">
+            Разработано
+            <a href="#" class="page-footer__copiyright-link">HTML Academy</a>
+          </p>
+        </div>
       </footer>
     </div>
   </body>
