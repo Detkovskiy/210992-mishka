@@ -1,7 +1,6 @@
 .charters {
   margin: 0;
-  padding: 0;
-  list-style: none;
+  @include reset-ul;
 
   &--position {
     margin-top: -60px;
@@ -11,6 +10,7 @@
 .charter {
   padding: 32px 30px;
 
+  /* MODIFICATORS */
   &--interior {
     background: #63d1bb url("../img/icon-interior.svg") no-repeat 242px 30px;
   }
@@ -18,20 +18,13 @@
   &--toy {
     background: #56c3b2 url("../img/icon-toy.svg") no-repeat 232px 30px;
   }
+  /*-----  End of MODIFICATORS  ------*/
 }
 
 .charter__link {
   font-size: 19px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: $font-thickness-bold;
   color: #fff;
   text-decoration: none;
-
-  &--interior {
-
-  }
-
-  &--toy {
-
-  }
 }

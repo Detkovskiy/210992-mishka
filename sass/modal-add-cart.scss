@@ -13,12 +13,12 @@
   margin-bottom: 10px;
   font-size: 25px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: $font-thickness-bold;
   text-transform: uppercase;
 }
 
 .modal-add-cart__option {
   font-size: 15px;
   line-height: 30px;
-  font-weight: 400;
+  font-weight: $font-thickness-normal;
 }

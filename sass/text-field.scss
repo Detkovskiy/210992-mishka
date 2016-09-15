@@ -10,7 +10,7 @@
   padding-right: 20px;
   font-size: 17px;
   line-height: 16px;
-  font-weight: 700;
+  font-weight: $font-thickness-bold;
   color: #63d1bb;
   text-transform: uppercase;
 }
@@ -20,9 +20,10 @@
   padding-top: 20px;
   font-size: 17px;
   line-height: 18px;
-  font-weight: 700;
+  font-weight: $font-thickness-bold;
   color: $text-color-title;
 
+  /* MODIFICATORS */
   &--green {
     position: relative;
     color: #63d1bb;
@@ -34,7 +35,6 @@
       content: "";
       width: 198px;
       border-bottom: solid 1px #63d1bb;
-
     }
   }
 
@@ -49,10 +49,9 @@
       content: "";
       width: 179px;
       border-bottom: solid 1px #63d1bb;
-
     }
   }
-
+  /*-----  End of MODIFICATORS  ------*/
 }
 
 .text-field__input {
@@ -61,7 +60,6 @@
   display: block;
   border: none;
   border-bottom: solid 2px #000;
-
 }
 
 .text-field__textarea {
@@ -69,7 +67,5 @@
   padding: 10px 10px;
   width: 100%;
   resize: none;
-  box-sizing: border-box;
   border: solid 2px $text-color-content;
-
 }

@@ -1,7 +1,6 @@
 .catalog-item {
-  box-sizing: border-box;
   border: solid 1px #ededed;
-
+  
   &--margin-bottom {
     margin-bottom: 30px;
   }
@@ -28,10 +27,9 @@
   padding-bottom: 20px;
   font-size: 13px;
   line-height: 30px;
-  font-weight: 400;
+  font-weight: $font-thickness-normal;
   color: $text-color-content;
   border-bottom: solid 1px #ececec;
-
 }
 
 .catalog-item__price {

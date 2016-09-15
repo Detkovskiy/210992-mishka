@@ -1,8 +1,7 @@
 .social-block {
-  padding-left: 0;
+  @include reset-ul;
   padding-bottom: 20px;
   border-bottom: solid 1px #e5e5e5;
-  list-style: none;
   font-size: 0;
   text-align: center;
 }
@@ -22,6 +21,7 @@
   width: 28px;
   height: 28px;
 
+  /* MODIFICATORS */
   &--in {
     background: url("../img/icon-insta.svg") no-repeat center;
   }
@@ -33,4 +33,5 @@
   &--tw {
     background: url("../img/icon-twitter.svg") no-repeat center;
   }
+  /*-----  End of MODIFICATORS  ------*/
 }

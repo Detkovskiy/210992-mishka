@@ -1,7 +1,3 @@
-.contact {
-
-}
-
 .contact__wrapper {
    padding: $wrapper-content;
 }
@@ -10,17 +6,15 @@
   margin: 0;
   font-size: 18px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: $font-thickness-bold;
   color: $text-color-title;
-
 }
 
 .contact__address {
   font-size: 15px;
   line-height: 30px;
-  font-weight: 400;
+  font-weight: $font-thickness-normal;
   color: $text-color-content;
-
 }
 
 .contact__mail-link {
@@ -37,8 +31,4 @@
 .contact__value {
   padding: 10px 0;
   padding-left: 50px;
-}
-
-.contact__btn {
-
 }

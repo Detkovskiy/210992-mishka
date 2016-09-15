@@ -1,7 +1,3 @@
-.about-us {
-
-}
-
 .about-us__wrapper {
   padding: $wrapper-content;
 }
@@ -9,22 +5,22 @@
 .about-us__title {
   font-size: 25px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: $font-thickness-bold;
   color: $text-color-title;
 }
 
 .about-us__list {
-  padding: 0;
-  list-style: none;
+  @include reset-ul;
 }
 
 .about-us__item {
   padding-top: 50px;
   font-size: 17px;
   line-height: 20px;
-  font-weight: 700;
+  font-weight: $font-thickness-bold;
   color: $text-color-title;
 
+  /* MODIFICATORS */
   &--material {
     background: url("../img/icon-feature-1.svg") no-repeat 7px 5px;
   }
@@ -48,4 +44,5 @@
   &--wrap {
     background: url("../img/icon-feature-6.svg") no-repeat 7px 13px;
   }
+  /*-----  End of MODIFICATORS  ------*/
 }

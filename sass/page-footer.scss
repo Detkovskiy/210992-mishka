@@ -10,10 +10,9 @@
   margin-bottom: 0;
   font-size: 19px;
   line-height: 20px;
-  font-weight: 700;
+  font-weight: $font-thickness-bold;
   color: $text-color-title;
   text-align: center;
-
 }
 
 .page-footer__copiyright-link {
@@ -24,5 +23,4 @@
   vertical-align: middle;
   font-size: 0;
   background: url("../img/logo-htmlacademy.svg") no-repeat center;
-
 }

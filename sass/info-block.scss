@@ -8,7 +8,7 @@
   padding-left: 90px;
   font-size: 17px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: $font-thickness-bold;
   color: $text-color-title;
 
   &::before {
@@ -30,6 +30,6 @@
 .info-block__description {
   font-size: 13px;
   line-height: 24px;
-  font-weight: 400;
+  font-weight: $font-thickness-normal;
   color: $text-color-content;
 }
