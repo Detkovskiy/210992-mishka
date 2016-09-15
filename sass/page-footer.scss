@@ -3,7 +3,7 @@
 }
 
 .page-footer__wrapper {
-  padding: 30px 30px;
+  padding: $wrapper-content;
 }
 
 .page-footer__copiyright {
@@ -11,7 +11,7 @@
   font-size: 19px;
   line-height: 20px;
   font-weight: 700;
-  color: #000;
+  color: $text-color-title;
   text-align: center;
 
 }

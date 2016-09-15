@@ -3,20 +3,19 @@
 }
 
 .about-us__wrapper {
-  padding: 30px 30px;
+  padding: $wrapper-content;
 }
 
 .about-us__title {
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
-  color: #000;
+  color: $text-color-title;
 }
 
 .about-us__list {
   padding: 0;
   list-style: none;
-
 }
 
 .about-us__item {
@@ -24,7 +23,7 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
-  color: #000;
+  color: $text-color-title;
 
   &--material {
     background: url("../img/icon-feature-1.svg") no-repeat 7px 5px;
@@ -49,5 +48,4 @@
   &--wrap {
     background: url("../img/icon-feature-6.svg") no-repeat 7px 13px;
   }
-
 }

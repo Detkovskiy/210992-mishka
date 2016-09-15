@@ -9,7 +9,7 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
-  color: #000;
+  color: $text-color-title;
 
   &::before {
     position: absolute;
@@ -24,12 +24,12 @@
 }
 
 .info-block__wrapper {
-  padding: 30px 30px;
+  padding: $wrapper-content;
 }
 
 .info-block__description {
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
-  color: #444444;
+  color: $text-color-content;
 }

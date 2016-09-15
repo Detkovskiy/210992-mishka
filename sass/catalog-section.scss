@@ -8,7 +8,7 @@
 }
 
 .catalog-section__wrapper {
-  padding: 30px 30px;
+  padding: $wrapper-content;
 }
 
 .catalog-item__description-wrapper {
@@ -20,7 +20,7 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
-  color: #000;
+  color: $text-color-title;
 }
 
 .catalog-item__description {
@@ -29,7 +29,7 @@
   font-size: 13px;
   line-height: 30px;
   font-weight: 400;
-  color: #444444;
+  color: $text-color-content;
   border-bottom: solid 1px #ececec;
 
 }

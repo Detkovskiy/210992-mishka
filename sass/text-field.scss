@@ -21,7 +21,7 @@
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
-  color: #000;
+  color: $text-color-title;
 
   &--green {
     position: relative;
@@ -70,6 +70,6 @@
   width: 100%;
   resize: none;
   box-sizing: border-box;
-  border: solid 2px #444444;
+  border: solid 2px $text-color-content;
 
 }

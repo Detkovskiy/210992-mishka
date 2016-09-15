@@ -1,5 +1,5 @@
 .product-item__wrapper {
-  padding: 30px 30px;
+  padding: $wrapper-content;
 }
 
 .product-item__title {
@@ -7,7 +7,7 @@
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
-  color: #000000;
+  color: $text-color-title;
 }
 
 .product-item__feature {
@@ -22,7 +22,7 @@
   font-size: 15px;
   line-height: 24px;
   font-weight: 400;
-  color: #444444;
+  color: $text-color-content;
 }
 
 .product-item__options {
@@ -48,5 +48,5 @@
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
-  color: #444444;
+  color: $text-color-content;
 }
