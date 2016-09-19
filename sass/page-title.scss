@@ -2,16 +2,10 @@
   font-size: 27px;
   line-height: 30px;
   text-align: center;
-  font-weight: $font-thickness-bold;
+  font-weight: 700;
   margin: 0;
 
   /* MODIFICATORS */
-  &--main {
-    padding-top: 80px;
-    padding-bottom: 180px;
-    background: #ccc url("../img/hero-mobile@1x.jpg") center;
-    color: $page-title-main-color;
-  }
 
   &--catalog {
     padding: 80px 30px;

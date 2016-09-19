@@ -1,24 +1,28 @@
 .modal-add-cart {
+  padding: $wrapper-content;
   width: 320px;
   height: 337px;
   text-align: center;
 }
 
-.modal-add-cart__wrapper {
-  padding: $wrapper-content;
+.modal-add-cart__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
-.modal-add-cart__title {
+.modal-add-cart__name {
   margin: 0;
   margin-bottom: 10px;
   font-size: 25px;
   line-height: 30px;
-  font-weight: $font-thickness-bold;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
 .modal-add-cart__option {
+  display: block;
   font-size: 15px;
   line-height: 30px;
-  font-weight: $font-thickness-normal;
+  font-weight: 400;
 }

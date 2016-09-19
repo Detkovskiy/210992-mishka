@@ -1,11 +1,11 @@
-.about-us__wrapper {
+.about-us {
   padding: $wrapper-content;
 }
 
 .about-us__title {
   font-size: 25px;
   line-height: 30px;
-  font-weight: $font-thickness-bold;
+  font-weight: 700;
   color: $text-color-title;
 }
 
@@ -17,7 +17,7 @@
   padding-top: 50px;
   font-size: 17px;
   line-height: 20px;
-  font-weight: $font-thickness-bold;
+  font-weight: 700;
   color: $text-color-title;
 
   /* MODIFICATORS */

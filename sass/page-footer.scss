@@ -1,16 +1,13 @@
 .page-footer {
+  padding: $wrapper-content;
   background: #f1f1f1;
 }
 
-.page-footer__wrapper {
-  padding: $wrapper-content;
-}
-
 .page-footer__copiyright {
-  margin-bottom: 0;
+  margin: 0;
   font-size: 19px;
   line-height: 20px;
-  font-weight: $font-thickness-bold;
+  font-weight: 700;
   color: $text-color-title;
   text-align: center;
 }

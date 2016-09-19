@@ -1,4 +1,4 @@
-.reviews__wrapper {
+.reviews {
   padding: $wrapper-content;
 }
 
@@ -6,21 +6,21 @@
   margin: 0;
   font-size: 25px;
   line-height: 30px;
-  font-weight: $font-thickness-bold;
+  font-weight: 700;
   color: $text-color-title;
 }
 
 .reviews__content {
   font-size: 15px;
   line-height: 30px;
-  font-weight: $font-thickness-normal;
+  font-weight: 400;
   color: $text-color-content;
 }
 
 .reviews__autor-name {
   font-size: 18px;
   line-height: 24px;
-  font-weight: $font-thickness-bold;
+  font-weight: 700;
   color: $text-color-title;
   font-style: normal;
 }
@@ -30,8 +30,11 @@
   margin-bottom: 20px;
   font-size: 18px;
   line-height: 30px;
-  font-weight: $font-thickness-normal;
+  font-weight: 400;
   color: $text-color-content;
+}
+.reviews__arrows {
+  margin-bottom: 20px;
 }
 
 .reviews__arrow {
@@ -40,7 +43,7 @@
   background: #fff;
   border: solid 1px #ccc;
   font-size: 0;
-  
+
   /* MODIFICATORS */
   &--prev {
     float: left;
@@ -53,9 +56,4 @@
     background: url("../img/icon-right-arrow.svg") no-repeat center;
   }
   /*-----  End of MODIFICATORS  ------*/
-}
-
-.reviews__btn {
-  margin-top: 20px;
-
 }

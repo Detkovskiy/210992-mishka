@@ -1,4 +1,4 @@
-.contact__wrapper {
+.contact {
    padding: $wrapper-content;
 }
 
@@ -6,14 +6,14 @@
   margin: 0;
   font-size: 18px;
   line-height: 30px;
-  font-weight: $font-thickness-bold;
+  font-weight: 700;
   color: $text-color-title;
 }
 
 .contact__address {
   font-size: 15px;
   line-height: 30px;
-  font-weight: $font-thickness-normal;
+  font-weight: 400;
   color: $text-color-content;
 }
 

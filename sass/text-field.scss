@@ -1,57 +1,44 @@
 .text-field {
-  margin-top: 20px;
+  margin-bottom: 20px;
   padding: 0;
   border: none;
   border-top: solid 1px #63d1bb;
+
+  &--one-fild {
+    margin-bottom: 20px;
+  }
 }
 
 .text-field__group-title {
   margin-left: -4px;
+  margin-bottom: 20px;
   padding-right: 20px;
   font-size: 17px;
   line-height: 16px;
-  font-weight: $font-thickness-bold;
+  font-weight: 700;
   color: #63d1bb;
   text-transform: uppercase;
+
+  &--one-fild {
+    margin-bottom: 10px;
+  }
 }
 
 .text-field__label {
   display: block;
-  padding-top: 20px;
+  margin-bottom: 20px;
   font-size: 17px;
   line-height: 18px;
-  font-weight: $font-thickness-bold;
+  font-weight: 700;
   color: $text-color-title;
 
-  /* MODIFICATORS */
   &--green {
-    position: relative;
     color: #63d1bb;
-
-    &::before {
-      position: absolute;
-      top: 28px;
-      left: 60px;
-      content: "";
-      width: 198px;
-      border-bottom: solid 1px #63d1bb;
-    }
   }
 
-  &--green-email {
-    position: relative;
-    color: #63d1bb;
-
-    &::before {
-      position: absolute;
-      top: 28px;
-      left: 80px;
-      content: "";
-      width: 179px;
-      border-bottom: solid 1px #63d1bb;
-    }
+  &:last-child {
+    margin-bottom: 0;
   }
-  /*-----  End of MODIFICATORS  ------*/
 }
 
 .text-field__input {
@@ -63,7 +50,6 @@
 }
 
 .text-field__textarea {
-  margin-top: 20px;
   padding: 10px 10px;
   width: 100%;
   resize: none;
