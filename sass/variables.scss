@@ -1,0 +1,20 @@
+/* Цвет основных заголовков и label */
+$black: #000000;
+$text-color-title: $black;
+
+/* Цвет абзацев */
+$text-color-content: #444444;
+
+/* Внутренние отступы */
+$wrapper-content: 30px 30px;
+
+/* Цвета заголовков страниц */
+$page-title-main-color: #010000;
+$page-title-catalog-color: #000000;
+$page-title-form-color: #231f20;
+
+/* Сброс отступа и стиля списка */
+@mixin reset-ul {
+  padding: 0;
+  list-style: none;
+}

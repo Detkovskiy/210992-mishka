@@ -1,0 +1,34 @@
+.contact {
+   padding: $wrapper-content;
+}
+
+.contact__title {
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $text-color-title;
+}
+
+.contact__address {
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $text-color-content;
+}
+
+.contact__mail-link {
+  text-decoration: none;
+  color: $text-color-content;
+  border-bottom: solid 1px #62d1ba;
+}
+
+.contact__field {
+  float: left;
+  padding: 10px 0;
+}
+
+.contact__value {
+  padding: 10px 0;
+  padding-left: 50px;
+}

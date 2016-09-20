@@ -1,0 +1,48 @@
+.about-us {
+  padding: $wrapper-content;
+}
+
+.about-us__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  color: $text-color-title;
+}
+
+.about-us__list {
+  @include reset-ul;
+}
+
+.about-us__item {
+  padding-top: 50px;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $text-color-title;
+
+  /* MODIFICATORS */
+  &--material {
+    background: url("../img/icon-feature-1.svg") no-repeat 7px 5px;
+  }
+
+  &--style {
+    background: url("../img/icon-feature-3.svg") no-repeat 0px 13px;
+  }
+
+  &--like {
+    background: url("../img/icon-feature-5.svg") no-repeat 7px 13px;
+  }
+
+  &--handmade {
+    background: url("../img/icon-feature-2.svg") no-repeat 7px 13px;
+  }
+
+  &--manufacturer {
+    background: url("../img/icon-feature-4.svg") no-repeat 0px 13px;
+  }
+
+  &--wrap {
+    background: url("../img/icon-feature-6.svg") no-repeat 7px 13px;
+  }
+  /*-----  End of MODIFICATORS  ------*/
+}

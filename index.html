@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic,cyrillic-ext" rel="stylesheet">
   </head>
   <body>
 
@@ -10,9 +12,9 @@
 
       <header class="page-header">
         <div class="page-header__logo">
-          <img src="img/logo.png" width="" height="" alt="Мишка">
+          <a><img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка"></a>
         </div>
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--closed">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
             <li class="main-nav__item"><a href="#">Вязяние на заказ</a></li>
@@ -22,74 +24,71 @@
         </nav>
       </header>
 
-      <h1 class="page-title page-title--main">Милые штучки ручной работы для дома</h1>
+      <div class="main-banner">
+        <h1 class="page-title">Милые штучки ручной работы для дома</h1>
+      </div>
 
-      <ul class="charters">
-        <li class="charter">
-          <a href="#" class="charter__link  charter__link--interior">Предметы интерьера</a>
+      <ul class="charters  charters--position">
+        <li class="charter  charter--interior">
+          <a href="#" class="charter__link  charter__link--interior">Предметы <br> интерьера</a>
         </li>
-        <li class="charter">
-          <a href="#" class="charter__link  charter__link--toy">Детские игрушки</a>
+        <li class="charter  charter--toy">
+          <a href="catalog.html" class="charter__link  charter__link--toy">Детские <br> игрушки</a>
         </li>
       </ul>
 
       <section class="product-item">
-        <div class="product-item__wrapper">
-          <header class="product-item__header">
-            <h2 class="product-item__title">Вязанные корзинки</h2>
-            <span class="product-item__feature">Товар недели</span>
-          </header>
-          <p class="product-item__description">
-            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-          </p>
-          <dl class="product-item__options">
-            <dt class="contact__field">Цвет</dt>
-            <dd class="contact__value">Тиффани/серый</dd>
-            <dt class="contact__field">Диаметр</dt>
-            <dd class="contact__value">25 см</dd>
-            <dt class="contact__field">Высота</dt>
-            <dd class="contact__value">15 см</dd>
-          </dl>
-          <img class="product-item__image" src="img/knitted-baskets.jpg" width="" height="" alt="Вязанные корзинки">
-          <span class="product-item__price">Цена: 990 руб.</span>
-          <a href="#" class="btn  product-itemm__btn">Заказать</a>
-        </div>
+        <header class="product-item__header">
+          <h2 class="product-item__title">Вязанные корзинки</h2>
+          <span class="product-item__feature">Товар недели</span>
+        </header>
+        <p class="product-item__description">
+          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+        </p>
+        <dl class="product-item__options">
+          <dt class="product-item__field">Цвет:</dt>
+          <dd class="product-item__value">Тиффани/серый</dd>
+          <dt class="product-item__field">Диаметр:</dt>
+          <dd class="product-item__value">25 см</dd>
+          <dt class="product-item__field">Высота:</dt>
+          <dd class="product-item__value">15 см</dd>
+        </dl>
+        <img class="product-item__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязанные корзинки">
+        <span class="product-item__price">Цена: 990 руб.</span>
+        <a href="#" class="btn">Заказать</a>
       </section>
 
       <section class="about-us">
-        <div class="about-us__wrapper">
-          <h2 class="about-us__title">Коротко о нас:</h2>
-          <ul class="about-us__list">
-            <li class="about-us__item  about-us__item--material">Экологически чистые материалы</li>
-            <li class="about-us__item  about-us__item--style">Скандинавский стиль по российской цене</li>
-            <li class="about-us__item  about-us__item--like">Увеличивает лайки на фотографиях</li>
-            <li class="about-us__item  about-us__item--handmade">Связано вручную с любовью и умилением</li>
-            <li class="about-us__item  about-us__item--manufacturer">Поддержка отечественного производителя</li>
-            <li class="about-us__item  about-us__item--wrap">Поставляется в подарочной упаковке</li>
-          </ul>
-        </div>
+        <h2 class="about-us__title">Коротко о нас:</h2>
+        <ul class="about-us__list">
+          <li class="about-us__item  about-us__item--material">Экологически чистые материалы</li>
+          <li class="about-us__item  about-us__item--style">Скандинавский стиль по российской цене</li>
+          <li class="about-us__item  about-us__item--like">Увеличивает лайки на фотографиях</li>
+          <li class="about-us__item  about-us__item--handmade">Связано вручную с любовью и умилением</li>
+          <li class="about-us__item  about-us__item--manufacturer">Поддержка отечественного производителя</li>
+          <li class="about-us__item  about-us__item--wrap">Поставляется в подарочной упаковке</li>
+        </ul>
       </section>
 
       <section class="reviews">
-        <div class="reviews__wrapper">
-          <h2 class="reviews__title">Отзывы</h2>
-          <p class="reviews__content">
-            Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!
-          </p>
-          <cite class="reviews__autor-name">Анастасия Красильникова</cite>
-          <a href="#" class="reviews__autor-link">@misssssiskras</a>
-          <button class="reviews__prev" type="button">Назад</button>
-          <button class="reviews__next" type="button">Вперед</button>
-          <a href="#" class="btn  reviews__btn">Написать</a>
+        <h2 class="reviews__title">Отзывы</h2>
+        <p class="reviews__content">
+          Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильнее, а также набирают больше лайков!
+        </p>
+        <cite class="reviews__autor-name">Анастасия Красильникова</cite>
+        <a href="#" class="reviews__autor-link">@misssssiskras</a>
+        <div class="reviews__arrows">
+          <button class="reviews__arrow  reviews__arrow--prev" type="button">Назад</button>
+          <button class="reviews__arrow  reviews__arrow--next" type="button">Вперед</button>
         </div>
+        <a href="#" class="btn">Написать</a>
       </section>
 
       <section class="contact">
-        <div class="contact__wrapper">
           <h2 class="contact__title">Контакты</h2>
           <dl class="contact__address">
             <dt class="contact__field">e-mail:</dt>
-            <dd class="contact__value">info@mimimishkashop.ru</dd>
+            <dd class="contact__value"><a class="contact__mail-link" href="#">info@mimimishkashop.ru</a></dd>
             <dt class="contact__field">адрес:</dt>
             <dd class="contact__value">
               г. Санкт-Петербург,<br>
@@ -97,10 +96,13 @@
               д. 19/8, офис 101
             </dd>
           </dl>
-        </div>
-        <div id="map" class="map"></div>
-        <a href="#" class="btn  contact__btn">Напишите нам</a>
-      </section>
+       </section>
+
+      <div id="map" class="map"></div>
+
+      <div class="btn-modal-wrapper">
+        <a href="#" class="btn">Напишите нам</a>
+      </div>
 
       <footer class="page-footer">
         <ul class="social-block">
@@ -120,27 +122,33 @@
         </p>
       </footer>
 
-      <div class="modal-add-cart  modal-add-cart--hidden" id="modal-add-cart">
-        <div class="modal-add-cart__wrapper">
-          <p class="modal-add-cart__title">Добавить в корзину</p>
+      <form action="#" class="modal-add-cart  modal-add-cart--hidden" id="modal-add-cart">
+        <fieldset class="modal-add-cart__fieldset">
+          <legend class="modal-add-cart__name">Добавить <br> в корзину</legend>
           <span class="modal-add-cart__option">Выберите размер:</span>
-          <form action="#" class="size-select">
-            <label class="size-item">
+          <div class="size-item">
+            <label class="size-item__label">
               <input class="size-item__radio" type="radio" name="size" checked>
               <span class="size-item__radio-indicator"></span>S
             </label>
-            <label class="size-item">
+            <label class="size-item__label">
               <input class="size-item__radio" type="radio" name="size">
               <span class="size-item__radio-indicator"></span>M
             </label>
-            <label class="size-item">
+            <label class="size-item__label">
               <input class="size-item__radio" type="radio" name="size">
               <span class="size-item__radio-indicator"></span>L
             </label>
-            <button class="btn  btn--size-select" type="submit">Добавить</button>
-          </form>
-        </div>
-      </div>
+          </div>
+          <button class="btn  btn--size-select" type="submit">Добавить</button>
+        </fieldset>
+      </form>
+
+
+
+
     </div>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="js/map.js"></script>
   </body>
 </html>
