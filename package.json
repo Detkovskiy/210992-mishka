@@ -15,11 +15,13 @@
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "0.0.7",
     "autoprefixer": "6.4.1",
-    "browser-sync": "2.15.0",
-    "gulp": "3.9.1",
-    "gulp-plumber": "1.1.0",
-    "gulp-postcss": "6.2.0",
-    "gulp-sass": "^2.3.2"
+    "browser-sync": "^2.15.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-util": "^3.0.7"
   },
   "scripts": {
     "test": "editorconfig-cli",
