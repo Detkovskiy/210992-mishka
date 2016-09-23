@@ -2,3 +2,17 @@
   width: 320px;
   margin: 0 auto;
 }
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1150px) {
+  .container {
+    width: 1150px;
+    margin: 0 auto;
+  }
+}

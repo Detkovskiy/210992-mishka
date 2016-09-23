@@ -7,7 +7,7 @@ $text-color-content: #444444;
 
 /* Внутренние отступы */
 $wrapper-content: 30px 30px;
-
+$wrapper-content-tablet: 30px 50px;
 /* Цвета заголовков страниц */
 $page-title-main-color: #010000;
 $page-title-catalog-color: #000000;
@@ -17,4 +17,13 @@ $page-title-form-color: #231f20;
 @mixin reset-ul {
   padding: 0;
   list-style: none;
+}
+
+@mixin clearfix() {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
 }

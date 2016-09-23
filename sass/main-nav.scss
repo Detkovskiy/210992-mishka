@@ -1,5 +1,38 @@
 .main-nav {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  background: #fff;
+
   &--closed {
     display: none;
   }
+}
+
+.main-nav__list {
+  margin: 0;
+  @include reset-ul;
+}
+
+.main-nav__item {
+  padding: 27px 0;
+  padding-left: 76px;
+  border-top: solid 1px #ececec;
+
+  &:last-child {
+    border-bottom: solid 1px #ececec;
+  }
+}
+
+.main-nav__link {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+
 }

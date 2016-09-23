@@ -16,15 +16,15 @@
         </div>
         <nav class="main-nav main-nav--closed">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
-            <li class="main-nav__item"><a href="#">Вязяние на заказ</a></li>
-            <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
-            <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог товаров</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Вязяние на заказ</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
           </ul>
         </nav>
       </header>
 
-      <div class="main-banner">
+      <div class="main-banner main-banner--home">
         <h1 class="page-title">Милые штучки ручной работы для дома</h1>
       </div>
 
@@ -55,7 +55,9 @@
         </dl>
         <img class="product-item__image" src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязанные корзинки">
         <span class="product-item__price">Цена: 990 руб.</span>
-        <a href="#" class="btn">Заказать</a>
+        <div class="product-item__btn">
+          <a href="#" class="btn">Заказать</a>
+        </div>
       </section>
 
       <section class="about-us">
@@ -81,7 +83,9 @@
           <button class="reviews__arrow  reviews__arrow--prev" type="button">Назад</button>
           <button class="reviews__arrow  reviews__arrow--next" type="button">Вперед</button>
         </div>
-        <a href="#" class="btn">Написать</a>
+        <div class="reviews__btn">
+          <a href="#" class="btn">Написать</a>
+        </div>
       </section>
 
       <section class="contact">
@@ -105,6 +109,9 @@
       </div>
 
       <footer class="page-footer">
+        <div class="page-footer__logo">
+          <a><img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка"></a>
+        </div>
         <ul class="social-block">
           <li class="social-block__icon">
             <a href="#" class="social-block__link  social-block__link--in">Мы в Инстаграмме</a>
@@ -124,7 +131,7 @@
 
       <form action="#" class="modal-add-cart  modal-add-cart--hidden" id="modal-add-cart">
         <fieldset class="modal-add-cart__fieldset">
-          <legend class="modal-add-cart__name">Добавить <br> в корзину</legend>
+          <legend class="modal-add-cart__name">Добавить в корзину</legend>
           <span class="modal-add-cart__option">Выберите размер:</span>
           <div class="size-item">
             <label class="size-item__label">

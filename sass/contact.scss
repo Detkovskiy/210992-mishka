@@ -31,4 +31,37 @@
 .contact__value {
   padding: 10px 0;
   padding-left: 50px;
+  }
+
+
+
+
+@media (min-width: 768px) {
+  .contact__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .contact__address {
+    @include clearfix();
+  }
+  .contact__value {
+    padding-left: 0;
+    float: left;
+  }
+  .contact__mail-link {
+    margin-right: 100px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .contact {
+    padding-left: 225px;
+  }
+  .contact__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .contact__value {
+    float: none;
+  }
 }

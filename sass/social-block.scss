@@ -36,3 +36,14 @@
   }
   /*-----  End of MODIFICATORS  ------*/
 }
+
+@media (min-width: 768px) {
+  .social-block {
+    margin-left: 100px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    display: inline-block;
+    vertical-align: top;
+    border: none;
+  }
+}

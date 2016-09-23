@@ -1,1 +1,12 @@
+@media (min-width: 768px) {
+  .charters {
+    @include clearfix;
+  }
+  
+  .charter {
+    display: block;
+    width: 50%;
+    float: left;
 
+  }
+}

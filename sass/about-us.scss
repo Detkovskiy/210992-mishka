@@ -46,3 +46,34 @@
   }
   /*-----  End of MODIFICATORS  ------*/
 }
+
+@media (min-width: 768px) {
+  .about-us {
+    padding: $wrapper-content-tablet;
+  }
+  .about-us__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .about-us__item {
+    display: inline-block;
+    width: 43%;
+
+    &:nth-child(2n) {
+      margin-left: 50px;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .about-us {
+    padding-left: 225px;
+  }
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
+  }
+  .about-us__item {
+    font-size: 20px;
+  }
+}
