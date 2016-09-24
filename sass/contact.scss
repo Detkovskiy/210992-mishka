@@ -30,7 +30,7 @@
 
 .contact__value {
   padding: 10px 0;
-  padding-left: 50px;
+  margin-left: 80px;
   }
 
 
@@ -45,11 +45,16 @@
     @include clearfix();
   }
   .contact__value {
-    padding-left: 0;
+    margin-left: 40px;
     float: left;
   }
   .contact__mail-link {
-    margin-right: 100px;
+  /*  margin-right: 100px;*/
+  }
+  .contact__field {
+    &:last-child {
+      margin-left: 100px;
+    }
   }
 }
 
@@ -62,6 +67,7 @@
     line-height: 57px;
   }
   .contact__value {
+    margin-left: 90px;
     float: none;
   }
 }

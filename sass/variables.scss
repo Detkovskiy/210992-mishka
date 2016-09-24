@@ -22,7 +22,6 @@ $page-title-form-color: #231f20;
 @mixin clearfix() {
   &::after {
     content: "";
-
     display: table;
     clear: both;
   }

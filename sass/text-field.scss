@@ -3,10 +3,6 @@
   padding: 0;
   border: none;
   border-top: solid 1px #63d1bb;
-
-  &--one-fild {
-    margin-bottom: 20px;
-  }
 }
 
 .text-field__group-title {
@@ -54,4 +50,65 @@
   width: 100%;
   resize: none;
   border: solid 2px $text-color-content;
+}
+
+@media (min-width: 768px) {
+  .text-field {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 217px;
+    padding-right: 50px;
+    border: none;
+
+    &--tel {
+      padding-top: 50px;
+      margin-bottom: 0;
+      background: #f1f1f1;
+    }
+
+    &--email {
+      padding-top: 20px;
+      padding-bottom: 50px;
+      background: #f1f1f1;
+    }
+  }
+  .text-field__group-title {
+    margin-left: 0;
+    position: absolute;
+    top: 0;
+    left: 55px;
+
+    &--tel {
+      top: 63px;
+      left: 55px;
+    }
+
+    &--email {
+      top: 35px;
+      left: 55px;
+    }
+  }
+  .text-field__input {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 19px;
+
+    &--background {
+      background: #f1f1f1;
+    }
+  }
+  .text-field__textarea {
+    font-size: 19px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .text-field {
+    padding-left: 225px;
+    padding-right: 225px;
+  }
+  .text-field__group-title {
+    left: 117px;
+  }
 }

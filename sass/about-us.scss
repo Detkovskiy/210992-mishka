@@ -3,6 +3,7 @@
 }
 
 .about-us__title {
+  margin-bottom: 0;
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
@@ -14,7 +15,7 @@
 }
 
 .about-us__item {
-  padding-top: 50px;
+  padding-top: 80px;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
@@ -22,27 +23,27 @@
 
   /* MODIFICATORS */
   &--material {
-    background: url("../img/icon-feature-1.svg") no-repeat 7px 5px;
+    background: url("../img/icon-feature-1.svg") no-repeat 7px 32px;
   }
 
   &--style {
-    background: url("../img/icon-feature-3.svg") no-repeat 0px 13px;
+    background: url("../img/icon-feature-3.svg") no-repeat 0px 41px;
   }
 
   &--like {
-    background: url("../img/icon-feature-5.svg") no-repeat 7px 13px;
+    background: url("../img/icon-feature-5.svg") no-repeat 7px 41px;
   }
 
   &--handmade {
-    background: url("../img/icon-feature-2.svg") no-repeat 7px 13px;
+    background: url("../img/icon-feature-2.svg") no-repeat 7px 34px;
   }
 
   &--manufacturer {
-    background: url("../img/icon-feature-4.svg") no-repeat 0px 13px;
+    background: url("../img/icon-feature-4.svg") no-repeat 0px 41px;
   }
 
   &--wrap {
-    background: url("../img/icon-feature-6.svg") no-repeat 7px 13px;
+    background: url("../img/icon-feature-6.svg") no-repeat 7px 38px;
   }
   /*-----  End of MODIFICATORS  ------*/
 }
@@ -55,13 +56,17 @@
     font-size: 43px;
     line-height: 50px;
   }
+  .about-us__list {
+    -moz-column-count: 2;
+    -moz-column-gap: 10px;
+    -webkit-column-count: 2;
+    -webkit-column-gap: 10px;
+    column-count: 2;
+    column-gap: 63px;
+  }
   .about-us__item {
-    display: inline-block;
-    width: 43%;
-
-    &:nth-child(2n) {
-      margin-left: 50px;
-    }
+    width: 84%;
+    margin: 5px;
   }
 }
 
@@ -74,6 +79,7 @@
     line-height: 57px;
   }
   .about-us__item {
+    width: 73%;
     font-size: 20px;
   }
 }

@@ -1,4 +1,33 @@
 .page-order {
-  padding: 30px 30px;
+  padding: $wrapper-content;
 }
 
+.page-order__text {
+  margin: 0 0 20px;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $text-color-content;
+}
+
+@media (min-width: 768px) {
+  .page-order {
+    padding: 0;
+    padding-top: 81px;
+  }
+  .page-order__text {
+    padding: 0 50px;
+    font-size: 17px;
+    line-height: 30px;
+
+    &--top {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .page-order__text {
+    padding: 0 225px;
+  }
+}

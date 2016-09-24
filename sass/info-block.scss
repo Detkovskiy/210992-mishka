@@ -15,8 +15,6 @@
     position: absolute;
     content:"";
     left: 30px;
-    display: inline-block;
-    vertical-align: top;
     width: 40px;
     height: 40px;
     background: url("../img/icon-video.svg") no-repeat center;
@@ -38,17 +36,55 @@
   .info-block {
     position: relative;
   }
+  .info-block__video {
+    width: 668px;
+    height: 453px;
+  }
   .info-block__title {
     position: absolute;
-    top: 120px;
+    bottom: 128px;
 
     &::before {
       position: absolute;
       content:"";
       left: 30px;
       top: 0;
-      display: inline-block;
-      vertical-align: top;
+      width: 40px;
+      height: 40px;
+      background: url("../img/icon-video.svg") no-repeat center;
+    }
+  }
+}
+
+@media (min-width: 1150px) {
+  .info-block {
+    @include clearfix();
+  }
+  .info-block__video {
+    width: 700px;
+    height: 450px;
+  }
+  .info-block__description {
+    margin-bottom: 50px;
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .info-block__wrapper {
+    margin-top: 134px;
+    float: right;
+    width: 350px;
+  }
+  .info-block__title {
+    position: absolute;
+    top: 68px;
+    right: 129px;
+    width: 26%;
+
+    &::before {
+      position: absolute;
+      content:"";
+      left: 88px;
+      top: -47px;
       width: 40px;
       height: 40px;
       background: url("../img/icon-video.svg") no-repeat center;

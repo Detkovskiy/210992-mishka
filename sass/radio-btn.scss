@@ -18,4 +18,34 @@
 
 .radio-btn__label {
   display: block;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .radio-btn {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 217px;
+    border: none;
+  }
+  .radio-btn__group-title {
+    margin-left: 0;
+    position: absolute;
+    top: 0;
+    left: 55px;
+  }
+  .radio-btn__label {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 1150px) {
+  .radio-btn {
+    padding-left: 225px;
+  }
+  .radio-btn__group-title {
+    left: 117px;
+  }
 }
