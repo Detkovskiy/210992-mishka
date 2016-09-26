@@ -13,7 +13,7 @@ $page-title-main-color: #010000;
 $page-title-catalog-color: #000000;
 $page-title-form-color: #231f20;
 /* Разрешение окна браузера */
-$mobile-widths-only: (min-width: 767px);
+$mobile-widths-only: (max-width: 767px);
 $tablet-widths: (min-width: 768px);
 $desktop-widths: (min-width: 1150px);
 
@@ -29,6 +29,17 @@ $desktop-widths: (min-width: 1150px);
     display: table;
     clear: both;
   }
+}
+
+@mixin visually-hidden() {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 @mixin container-fluid () {
