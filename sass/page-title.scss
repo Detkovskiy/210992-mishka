@@ -17,7 +17,7 @@
   /*-----  End of MODIFICATORS  ------*/
 }
 
-@media (min-width: 768px) {
+@media #{$tablet-widths} {
   .page-title {
     padding: 0 100px;
     font-size: 43px;
@@ -25,7 +25,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media #{$desktop-widths} {
   .page-title {
     padding: 0 150px;
     font-size: 53px;

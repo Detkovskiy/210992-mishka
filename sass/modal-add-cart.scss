@@ -28,7 +28,7 @@
   font-weight: 400;
 }
 
-@media (min-width: 768px) {
+@media #{$tablet-widths} {
   .modal-add-cart {
     margin: 0 auto;
     padding: 46px 108px;

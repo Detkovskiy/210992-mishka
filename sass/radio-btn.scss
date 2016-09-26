@@ -23,7 +23,7 @@
   font-weight: 700;
 }
 
-@media (min-width: 768px) {
+@media #{$tablet-widths} {
   .radio-btn {
     position: relative;
     margin-bottom: 50px;
@@ -41,7 +41,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media #{$desktop-widths} {
   .radio-btn {
     padding-left: 225px;
   }

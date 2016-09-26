@@ -1,17 +1,76 @@
 .main-nav {
+  position: relative;
+
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: -6px;
+  right: -86px;
+  z-index: 2;
+
+  display: block;
+  padding: 0;
+  width: 20px;
+  height: 14px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  cursor: pointer;
+
+  border: none;
+  outline:none;
+
+  &:hover {
+
+  }
+
+  &:active {
+
+
+  }
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 0px;
+
+  width: 20px;
+  height: 2px;
+
+  background-color: #000;
+  box-shadow: 0 8px 0 0 #000,
+              0 16px 0 0 #000;
+}
+
+.main-nav--closed .main-nav__toggle:hover::before {
+  top: -3px;
+  height: 4px;
+
+  box-shadow: 0 8px 0 0 #000,
+              0 16px 0 0 #000;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+
+  box-shadow: 0 8px 0 0 #ccc,
+              0 16px 0 0 #ccc;
+}
+
+.main-nav__list {
   position: absolute;
   z-index: 1;
+  margin: 0;
   width: 100%;
+  @include reset-ul;
   background: #fff;
 
   &--closed {
     display: none;
   }
-}
-
-.main-nav__list {
-  margin: 0;
-  @include reset-ul;
 }
 
 .main-nav__item {
@@ -33,6 +92,6 @@
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media #{$tablet-widths} {
 
 }

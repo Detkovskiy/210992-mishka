@@ -26,7 +26,7 @@
   background: url("../img/logo-htmlacademy.svg") no-repeat center;
 }
 
-@media (min-width: 768px) {
+@media #{$tablet-widths} {
   .page-footer {
     text-align: center;
     @include clearfix();

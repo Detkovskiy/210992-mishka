@@ -37,7 +37,7 @@
   /*-----  End of MODIFICATORS  ------*/
 }
 
-@media (min-width: 768px) {
+@media #{$tablet-widths} {
   .social-block {
     margin-left: 100px;
     margin-bottom: 0;

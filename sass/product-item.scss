@@ -52,7 +52,7 @@
   color: $text-color-content;
 }
 
-@media (min-width: 768px) {
+@media #{$tablet-widths} {
   .product-item {
     position: relative;
     padding: $wrapper-content-tablet;
@@ -90,7 +90,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media #{$desktop-widths} {
   .product-item {
     padding-left: 225px;
   }

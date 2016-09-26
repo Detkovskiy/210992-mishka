@@ -25,7 +25,7 @@
    /*-----  End of MODIFICATORS  ------*/
 }
 
-@media (min-width: 768px) {
+@media #{$tablet-widths} {
   .btn {
     &--form-order {
       margin-left: 50px;
@@ -36,7 +36,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media #{$desktop-widths} {
   .btn {
     &--form-order {
       margin-left: 225px;

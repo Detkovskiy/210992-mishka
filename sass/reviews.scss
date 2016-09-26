@@ -58,7 +58,7 @@
   /*-----  End of MODIFICATORS  ------*/
 }
 
-@media (min-width: 768px) {
+@media #{$tablet-widths} {
   .reviews {
     position: relative;
     padding: $wrapper-content-tablet;
@@ -91,7 +91,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media #{$desktop-widths} {
   .reviews {
     padding-left: 225px;
   }

@@ -1,7 +1,7 @@
 .btn-modal-wrapper {
   padding: $wrapper-content;
 }
-@media (min-width: 768px) {
+@media #{$tablet-widths} {
   .btn-modal-wrapper {
     margin: 0 auto;
     padding: 50px 0; 

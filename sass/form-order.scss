@@ -6,7 +6,7 @@
   color: $text-color-content;
 }
 
-@media (min-width: 768px) {
+@media #{$tablet-widths} {
   .form-order {
     margin-bottom: 50px;
     @include clearfix();
@@ -27,7 +27,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media #{$desktop-widths} {
   .form-order__text {
     font-size: 17px;
     line-height: 30px;

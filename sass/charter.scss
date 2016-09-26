@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media #{$tablet-widths} {
   .charters {
     @include clearfix;
   }

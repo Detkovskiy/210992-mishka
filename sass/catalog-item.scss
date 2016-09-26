@@ -54,7 +54,7 @@
   background: url("../img/icon-cart.svg") no-repeat center;
 }
 
-@media (min-width: 768px) {
+@media #{$tablet-widths} {
   .catalog-item__description-wrapper {
     float: right;
     width: 334px;
@@ -68,7 +68,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media #{$desktop-widths} {
   .catalog-item {
     display: inline-block;
     vertical-align: top;

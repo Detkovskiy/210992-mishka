@@ -23,7 +23,7 @@
   font-weight: 700;
 }
 
-@media (min-width: 768px) {
+@media #{$tablet-widths} {
   .checkbox {
     position: relative;
     padding: 80px 0;
@@ -45,7 +45,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media #{$desktop-widths} {
   .checkbox {
     padding-left: 225px;
   }

@@ -48,7 +48,7 @@
   /*-----  End of MODIFICATORS  ------*/
 }
 
-@media (min-width: 768px) {
+@media #{$tablet-widths} {
   .about-us {
     padding: $wrapper-content-tablet;
   }
@@ -70,7 +70,7 @@
   }
 }
 
-@media (min-width: 1150px) {
+@media #{$desktop-widths} {
   .about-us {
     padding-left: 225px;
   }
