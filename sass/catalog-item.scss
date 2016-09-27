@@ -74,7 +74,7 @@
     vertical-align: top;
     margin-right: 41px;
 
-    &--margin-right {
+    &:last-child {
       margin-right: 0;
     }
   }

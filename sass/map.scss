@@ -1,15 +1,20 @@
 .map {
+  margin-left: -30px;
   width: 320px;
   height: 457px;
 }
 @media #{$tablet-widths} {
   .map {
+    margin-left: -50px;
     width: 768px;
   }
 }
 
 @media #{$desktop-widths} {
   .map {
+    position: absolute;
+    top: -80px;
+    right: 50px;
     width: 525px;
   }
 }

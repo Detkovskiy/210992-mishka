@@ -1,22 +1,4 @@
 .checkbox {
-  margin-bottom: 20px;
-  padding: 0;
-  border: none;
-  border-top: solid 1px #63d1bb;
-}
-
-.checkbox__group-title {
-  margin-left: -4px;
-  margin-bottom: 20px;
-  padding-right: 20px;
-  font-size: 17px;
-  line-height: 16px;
-  font-weight: 700;
-  color: #63d1bb;
-  text-transform: uppercase;
-}
-
-.checkbox__label {
   display: block;
   font-size: 17px;
   line-height: 18px;
@@ -25,19 +7,6 @@
 
 @media #{$tablet-widths} {
   .checkbox {
-    position: relative;
-    padding: 80px 0;
-    padding-left: 217px;
-    border: none;
-    background: #f1f1f1;
-  }
-  .checkbox__group-title {
-    margin-left: 0;
-    position: absolute;
-    top: 80px;
-    left: 55px;
-  }
-  .checkbox__label {
     display: inline-block;
     vertical-align: top;
     width: 40%;
@@ -47,12 +16,6 @@
 
 @media #{$desktop-widths} {
   .checkbox {
-    padding-left: 225px;
-  }
-  .checkbox__group-title {
-    left: 117px;
-  }
-  .checkbox__label {
     width: 30%;
   }
 }

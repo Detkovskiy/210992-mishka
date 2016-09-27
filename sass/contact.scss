@@ -33,39 +33,41 @@
   margin-left: 80px;
   }
 
-
-
-
 @media #{$tablet-widths} {
+  .contact {
+    padding: $wrapper-content-tablet;
+  }
+
   .contact__title {
     font-size: 43px;
     line-height: 50px;
   }
+
   .contact__address {
     @include clearfix();
   }
+
   .contact__value {
     margin-left: 40px;
     float: left;
   }
+
   .contact__mail-link {
-  /*  margin-right: 100px;*/
-  }
-  .contact__field {
-    &:last-child {
-      margin-left: 100px;
-    }
+    margin-right: 60px;
   }
 }
 
 @media #{$desktop-widths} {
   .contact {
+    position: relative;
     padding-left: 225px;
   }
+
   .contact__title {
     font-size: 53px;
     line-height: 57px;
   }
+
   .contact__value {
     margin-left: 90px;
     float: none;

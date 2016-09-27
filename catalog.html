@@ -16,10 +16,13 @@
         </div>
         <nav class="main-nav main-nav--closed">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
-            <li class="main-nav__item"><a href="#">Вязяние на заказ</a></li>
-            <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
-            <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+            <li class="main-nav__item"><a class="main-nav__link">Каталог товаров</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязяние на заказ</a></li>
+            <li class="main-nav__item"><a class="main-nav__link  main-nav__link--search" href="#">Поиск по сайту</a></li>
+            <li class="main-nav__item"><a class="main-nav__link  main-nav__link--cart" href="#">Корзина: пока пуста</a></li>
+            <li class="main-nav__item  main-nav__item--hidden-mobile"><a class="main-nav__link" href="#">Бесплатная доставка по России</a></li>
+            <li class="main-nav__item  main-nav__item--hidden-tablet"><a class="main-nav__link" href="#">Новые поступления</a></li>
+            <li class="main-nav__item  main-nav__item--hidden-tablet"><a class="main-nav__link" href="#">Распродажа</a></li>
           </ul>
         </nav>
       </header>
@@ -55,7 +58,7 @@
             </div>
           </div>
         </article>
-        <article class="catalog-item  catalog-item--margin-right">
+        <article class="catalog-item">
           <img class="catalog-item__image" src="img/photo-2-mobile@1x.jpg" width="260px" height="195px" alt="Большая корзинка для игрушек">
           <div class="catalog-item__description-wrapper">
             <span class="catalog-item__name">
@@ -68,17 +71,20 @@
             </div>
           </div>
         </article>
-        <article class="info-block">
-          <h2 class="info-block__title">Процесс производства</h2>
+      </section>
+      <section class="info-block">
+        <div class="info-block__wrapper">
           <video class="info-block__video" width="260px" controls="" src="video/production.mp4"></video>
-          <div class="info-block__wrapper">
+          <div class="info-block__wrapper-description">
+            <h2 class="info-block__title">Процесс производства</h2>
             <p class="info-block__description">
               По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
             </p>
             <a href="#" class="btn">Сделать заказ</a>
           </div>
-        </article>
+        </div>
       </section>
+
 
       <footer class="page-footer">
         <ul class="social-block">

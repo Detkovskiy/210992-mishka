@@ -4,6 +4,7 @@
 
 @media #{$tablet-widths} {
   .catalog-section {
+    padding: $wrapper-content-tablet;
     padding-top: 80px;
   }
 

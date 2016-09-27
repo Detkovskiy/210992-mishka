@@ -1,11 +1,16 @@
 .info-block {
+  padding: $wrapper-content;
+}
+
+.info-block__wrapper {
   border: solid 1px #ededed;
 }
 
 .info-block__title {
+  margin: 0;
   position: relative;
   padding: 10px 0;
-  padding-left: 90px;
+  padding-left: 66px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -21,11 +26,12 @@
   }
 }
 
-.info-block__wrapper {
+.info-block__wrapper-description {
   padding: $wrapper-content;
 }
 
 .info-block__description {
+  margin: 0;
   font-size: 13px;
   line-height: 24px;
   font-weight: 400;
@@ -34,20 +40,34 @@
 
 @media #{$tablet-widths} {
   .info-block {
-    position: relative;
+    padding: $wrapper-content-tablet;
   }
+
+  .info-block__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   .info-block__video {
     width: 668px;
     height: 453px;
+    background: #ccc;
   }
+
+  .info-block__wrapper-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 264px;
+}
+
   .info-block__title {
-    position: absolute;
-    bottom: 128px;
 
     &::before {
       position: absolute;
       content:"";
-      left: 30px;
+      left: -4px;
       top: 0;
       width: 40px;
       height: 40px;
@@ -60,31 +80,39 @@
   .info-block {
     @include clearfix();
   }
-  .info-block__video {
-    width: 700px;
-    height: 450px;
+
+  .info-block__wrapper {
+    flex-direction: row;
   }
+
+  .info-block__video {
+    flex-basis: 682px;
+    height: 450px;
+    background: #ccc;
+  }
+
   .info-block__description {
-    margin-bottom: 50px;
+    margin: 0;
     font-size: 15px;
     line-height: 30px;
   }
-  .info-block__wrapper {
-    margin-top: 134px;
-    float: right;
-    width: 350px;
+
+  .info-block__wrapper-description {
+    justify-content: space-around;
+    flex-basis: 350px;
   }
+
   .info-block__title {
-    position: absolute;
-    top: 68px;
-    right: 129px;
-    width: 26%;
+    margin-top: 50px;
+    position: relative;
+    padding-left: 0;
+    padding-right: 150px;
 
     &::before {
       position: absolute;
       content:"";
-      left: 88px;
-      top: -47px;
+      left: -3px;
+      top: -39px;
       width: 40px;
       height: 40px;
       background: url("../img/icon-video.svg") no-repeat center;
