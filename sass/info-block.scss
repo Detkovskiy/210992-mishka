@@ -119,3 +119,27 @@
     }
   }
 }
+
+@media #{$mobile-widths-only} {
+  .info-block__wrapper {
+    position: relative;
+  }
+
+  .info-block__video {
+    margin-top: 100px;
+    background: #ccc;
+  }
+
+  .info-block__description {
+    margin-bottom: 20px;
+  }
+
+  .info-block__title {
+    position: absolute;
+    top: 14px;
+
+    &::before {
+      left: 7px;
+    }
+  }
+}

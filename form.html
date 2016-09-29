@@ -11,20 +11,40 @@
     <div class="container">
 
       <header class="page-header">
+
         <div class="page-header__logo">
-          <a href="index.html"><img src="img/logo-mobile.svg" width="" height="" alt="Мишка"></a>
+          <a href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка"></a>
         </div>
-        <nav class="main-nav main-nav--closed">
+
+        <nav class="main-nav  main-nav--closed  main-nav--nojs">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list">
             <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
             <li class="main-nav__item"><a class="main-nav__link">Вязяние на заказ</a></li>
-            <li class="main-nav__item"><a class="main-nav__link  main-nav__link--search" href="#">Поиск по сайту</a></li>
-            <li class="main-nav__item"><a class="main-nav__link  main-nav__link--cart" href="#">Корзина: пока пуста</a></li>
-            <li class="main-nav__item  main-nav__item--hidden-mobile"><a class="main-nav__link" href="#">Бесплатная доставка по России</a></li>
-            <li class="main-nav__item  main-nav__item--hidden-tablet"><a class="main-nav__link" href="#">Новые поступления</a></li>
-            <li class="main-nav__item  main-nav__item--hidden-tablet"><a class="main-nav__link" href="#">Распродажа</a></li>
           </ul>
         </nav>
+
+        <ul class="sub-menu">
+          <li class="sub-menu__item"><a class="sub-menu__link" href="#">Новые поступления</a></li>
+          <li class="sub-menu__item"><a class="sub-menu__link" href="#">Распродажа</a></li>
+        </ul>
+
+        <div class="user-menu  user-menu--closed  user-menu--nojs">
+          <div class="user-menu-wrapper">
+            <div class="user-menu__item  user-menu__item-search">
+              <a class="user-menu__link  user-menu__link--search" href="#">Поиск по сайту</a>
+              <form class="form-search  form-search--closed" method="post">
+                <input class="form-search__input" type="search" name="search" placeholder="Что ищем?" autofocus>
+              </form>
+            </div>
+            <div class="user-menu__item  user-menu__item-cart">
+              <a class="user-menu__link  user-menu__link--cart" href="#">Корзина: пока пуста</a>
+            </div>
+          </div>
+        </div>
+
+        <a class="page-header__delivery" href="#">Бесплатная доставка по России</a></li>
+
       </header>
 
       <div class="main-banner main-banner--form">
@@ -124,5 +144,7 @@
         </p>
       </footer>
     </div>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="js/map.js"></script>
   </body>
 </html>
