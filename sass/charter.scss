@@ -1,1 +1,12 @@
+@media #{$tablet-widths} {
+  .charters {
+    @include clearfix;
+  }
+  
+  .charter {
+    display: block;
+    width: 50%;
+    float: left;
 
+  }
+}

@@ -28,3 +28,27 @@
   color: #fff;
   text-decoration: none;
 }
+
+@media #{$tablet-widths} {
+  .charters {
+    margin-top: -16px;
+    padding: 0 50px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .container {
+    width: 1150px;
+    margin: 0 auto;
+  }
+  .charter {
+    &--interior {
+      background-position-x: 420px;
+    }
+
+    &--toy {
+      background-position-x: 420px;
+    }
+
+  }
+}

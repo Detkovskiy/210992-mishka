@@ -1,6 +1,21 @@
 .main-banner {
-  padding-top: 80px;
-  padding-bottom: 180px;
-  background: #ccc url("../img/hero-mobile@1x.jpg") center;
   color: $page-title-main-color;
+
+  &--home {
+    padding-top: 80px;
+    min-height: 350px;
+    background: #ccc url("../img/hero-mobile@1x.jpg") center;
+  }
+
+  &--catalog {
+    padding-top: 80px;
+    min-height: 190px;
+    background: #f1f1f1;
+  }
+
+  &--form {
+    padding-top: 80px;
+    min-height: 190px;
+    background: #f1f1f1;
+  }
 }

@@ -11,23 +11,48 @@
     <div class="container">
 
       <header class="page-header">
+
         <div class="page-header__logo">
           <a href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка"></a>
         </div>
-        <nav class="main-nav main-nav--closed">
+
+        <nav class="main-nav  main-nav--closed  main-nav--nojs">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
-            <li class="main-nav__item"><a href="#">Вязяние на заказ</a></li>
-            <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
-            <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+            <li class="main-nav__item"><a class="main-nav__link">Каталог товаров</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязяние на заказ</a></li>
           </ul>
         </nav>
+
+        <ul class="sub-menu">
+          <li class="sub-menu__item"><a class="sub-menu__link" href="#">Новые поступления</a></li>
+          <li class="sub-menu__item"><a class="sub-menu__link" href="#">Распродажа</a></li>
+        </ul>
+
+        <div class="user-menu  user-menu--closed  user-menu--nojs">
+          <div class="user-menu-wrapper">
+            <div class="user-menu__item  user-menu__item-search">
+              <a class="user-menu__link  user-menu__link--search" href="#">Поиск по сайту</a>
+              <form class="form-search  form-search--closed" method="post">
+                <input class="form-search__input" type="search" name="search" placeholder="Что ищем?" autofocus>
+              </form>
+            </div>
+            <div class="user-menu__item  user-menu__item-cart">
+              <a class="user-menu__link  user-menu__link--cart" href="#">Корзина: пока пуста</a>
+            </div>
+          </div>
+        </div>
+
+        <a class="page-header__delivery" href="#">Бесплатная доставка по России</a></li>
+
       </header>
 
-      <h1 class="page-title  page-title--catalog">Каталог товаров</h1>
+      <div class="main-banner main-banner--catalog">
+        <h1 class="page-title  page-title--catalog">Каталог товаров</h1>
+      </div>
 
       <section class="catalog-section">
-        <article class="catalog-item  catalog-item--margin-bottom">
+        <article class="catalog-item">
           <img class="catalog-item__image" src="img/photo-1-mobile@1x.jpg" width="260px" height="195px" alt="Зайчик-попрыгайчик">
           <div class="catalog-item__description-wrapper">
             <span class="catalog-item__name">
@@ -40,7 +65,7 @@
           </div>
           </div>
         </article>
-        <article class="catalog-item  catalog-item--margin-bottom">
+        <article class="catalog-item">
           <img class="catalog-item__image" src="img/photo-3-mobile@1x.jpg" width="260px" height="195px" alt="Корзинка для белья">
           <div class="catalog-item__description-wrapper">
             <span class="catalog-item__name">
@@ -53,30 +78,33 @@
             </div>
           </div>
         </article>
-        <article class="catalog-item  catalog-item--margin-bottom">
+        <article class="catalog-item">
           <img class="catalog-item__image" src="img/photo-2-mobile@1x.jpg" width="260px" height="195px" alt="Большая корзинка для игрушек">
           <div class="catalog-item__description-wrapper">
             <span class="catalog-item__name">
               <a href="#" class="catalog-item__link">Большая корзинка для игрушек</a>
             </span>
-            <span class="catalog-item__description">Диаметр 30 см, высота 30 см</span>
+            <span class="catalog-item__description  catalog-item__description--margin-bottom">Диаметр 30 см, высота 30 см</span>
             <div class="catalog-item__block-price">
               <span class="catalog-item__price">1 500 руб.</span>
               <button type="button" class="catalog-item__icon-cart"></button>
             </div>
           </div>
         </article>
-        <article class="info-block">
-          <h2 class="info-block__title">Процесс производства</h2>
-          <video width="260px" controls="" src="video/production.mp4"></video>
-          <div class="info-block__wrapper">
+      </section>
+      <section class="info-block">
+        <div class="info-block__wrapper">
+          <video class="info-block__video" width="260px" controls="" src="video/production.mp4"></video>
+          <div class="info-block__wrapper-description">
+            <h2 class="info-block__title">Процесс производства</h2>
             <p class="info-block__description">
               По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
             </p>
             <a href="#" class="btn">Сделать заказ</a>
           </div>
-        </article>
+        </div>
       </section>
+
 
       <footer class="page-footer">
         <ul class="social-block">
@@ -98,7 +126,7 @@
 
       <div class="modal-add-cart  modal-add-cart--hidden" id="modal-add-cart">
         <div class="modal-add-cart__wrapper">
-          <p class="modal-add-cart__title">Добавить в корзину</p>
+          <p class="modal-add-cart__name">Добавить в корзину</p>
           <span class="modal-add-cart__option">Выберите размер:</span>
           <form action="#" class="size-select">
             <label class="size-item">
@@ -118,5 +146,7 @@
         </div>
       </div>
     </div>
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="js/map.js"></script>
   </body>
 </html>

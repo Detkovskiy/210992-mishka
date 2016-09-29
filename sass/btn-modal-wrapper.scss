@@ -1,3 +1,17 @@
 .btn-modal-wrapper {
   padding: $wrapper-content;
 }
+
+@media #{$tablet-widths} {
+  .btn-modal-wrapper {
+    margin: 0 auto;
+    padding: 50px 0;
+    width: 230px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .btn-modal-wrapper {
+    margin: 0;
+  }
+}

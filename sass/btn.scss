@@ -24,3 +24,25 @@
    }
    /*-----  End of MODIFICATORS  ------*/
 }
+
+@media #{$tablet-widths} {
+  .btn {
+    &--form-order {
+      margin-left: 50px;
+      float: left;
+      width: 30%;
+      background: #fff;
+     }
+  }
+}
+
+@media #{$desktop-widths} {
+  .btn {
+    &--form-order {
+      margin-left: 225px;
+      float: left;
+      width: 20%;
+      background: #fff;
+     }
+  }
+}
