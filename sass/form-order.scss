@@ -1,3 +1,8 @@
+.form-order {
+  display: flex;
+  flex-direction: column;
+}
+
 .form-order__text {
   margin: 0 0 20px;
   font-size: 13px;
@@ -7,21 +12,64 @@
 }
 
 .form-order__field {
-  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
   padding: 0;
   border: none;
   border-top: solid 1px #63d1bb;
+
+    &--color {
+      margin-bottom: 11px;
+    }
+
+    &--text {
+      margin-bottom: 33px;
+    }
+
+    &--email {
+      margin-bottom: 33px;
+    }
+
+    &--dop {
+
+      margin-bottom: 9px;
+    }
 }
 
 .form-order__field-title {
   margin-left: -4px;
   margin-bottom: 20px;
-  padding-right: 20px;
+  padding-right: 29px;
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
   color: #63d1bb;
   text-transform: uppercase;
+
+    &--color {
+      padding-right: 20px;
+      margin-bottom: 25px;
+    }
+
+    &--fio {
+      padding-right: 22px;
+      margin-bottom: 33px;
+    }
+
+    &--tel {
+      margin-bottom: 8px;
+    }
+
+    &--email {
+      padding-top: 6px;
+      margin-bottom: 8px;
+    }
+
+    &--dop {
+
+      margin-bottom: 33px;
+    }
 }
 
 @media #{$tablet-widths} {

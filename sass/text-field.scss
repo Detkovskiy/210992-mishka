@@ -1,6 +1,6 @@
 .text-field {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
@@ -16,6 +16,7 @@
 }
 
 .text-field__input {
+  margin-top: 15px;
   padding: 10px 0;
   width: 100%;
   display: block;

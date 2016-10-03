@@ -62,14 +62,14 @@
               <input class="radio-btn__input" type="radio" name="type" checked>
               <span class="radio-btn__indicator"></span>Аксессуар для интерьера
             </label>
-            <label class="radio-btn__label">
+            <label class="radio-btn">
               <input class="radio-btn__input" type="radio" name="type">
-              <span class="radio-btn__indicator"></span>Детская игрушка
+              <span class="radio-btn__indicator  radio-btn__indicator--two"></span>Детская игрушка
             </label>
           </fieldset>
 
-          <fieldset class="form-order__field">
-            <legend class="form-order__field-title">Цвет</legend>
+          <fieldset class="form-order__field  form-order__field--color">
+            <legend class="form-order__field-title  form-order__field-title--color">Цвет</legend>
             <label class="checkbox">
               <input class="checkbox__input" type="checkbox" name="white" checked>
               <span class="checkbox__indicator"></span>Белый
@@ -97,7 +97,7 @@
           </fieldset>
 
           <fieldset class="form-order__field  form-order__field--text">
-            <legend class="form-order__field-title  form-order__field-title--text">ФИО</legend>
+            <legend class="form-order__field-title  form-order__field-title--fio  form-order__field-title--text">ФИО</legend>
             <label class="text-field">Имя:
               <input class="text-field__input  text-field__input--flex" type="text" placeholder="Введите ваше имя" name="name" required>
             </label>
@@ -117,9 +117,9 @@
             <legend class="form-order__field-title  form-order__field-title--email">E-MAIL</legend>
             <input class="text-field__input  text-field__input--background" type="email" placeholder="Ваш Email" name="email" >
           </fieldset>
-          <fieldset class="form-order__field  form-order__field--text">
-            <legend class="form-order__field-title">ДОП</legend>
-            <textarea class="text-field__textarea" name="message" placeholder="Опишите все ваши пожелания к заказу" cols="30" rows="10" required></textarea>
+          <fieldset class="form-order__field  form-order__field--text  form-order__field--dop">
+            <legend class="form-order__field-title  form-order__field-title--dop">ДОП</legend>
+            <textarea class="text-field__textarea" name="message" placeholder="Опишите все ваши пожелания к заказу" cols="30" rows="8" required></textarea>
           </fieldset>
           <p class="form-order__text  form-order__text--bottom">Все поля обязательны для заполнения</p>
           <button type="submit" class="btn  btn--form-order">Отправить заказ</button>
