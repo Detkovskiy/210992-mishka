@@ -11,6 +11,7 @@
 }
 
 .reviews__content {
+  margin: 21px 0 26px;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
@@ -27,7 +28,7 @@
 
 .reviews__autor-link {
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 34px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
@@ -35,7 +36,7 @@
 }
 
 .reviews__arrows {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .reviews__arrow {
@@ -60,6 +61,7 @@
 
 @media #{$tablet-widths} {
   .reviews {
+    margin-bottom: 101px;
     position: relative;
     padding: $wrapper-content-tablet;
     padding-top: 80px;
@@ -72,7 +74,7 @@
   }
 
   .reviews__content {
-    margin: 25px 0 50px;
+    margin: 49px 0 58px;
     font-size: 17px;
     line-height: 30px;
   }
@@ -80,13 +82,13 @@
   .reviews__btn {
     position: absolute;
     width: 175px;
-    top: 33px;
+    top: 83px;
     right: 50px;
   }
 
   .reviews__arrows {
     position: absolute;
-    bottom: 40px;
+    top: 10px;
     right: 50px;
     width: 167px;
   }

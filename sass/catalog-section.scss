@@ -1,17 +1,20 @@
 .catalog-section {
   padding: $wrapper-content;
+  padding-bottom: 0;
 }
 
 @media #{$tablet-widths} {
   .catalog-section {
     padding: $wrapper-content-tablet;
     padding-top: 80px;
+    padding-bottom: 0;
   }
 
 }
 
 @media #{$desktop-widths} {
   .catalog-section {
+    padding-top: 157px;
     font-size: 0;
   }
 

@@ -2,14 +2,14 @@
   color: $page-title-main-color;
 
   &--home {
-    padding-top: 80px;
+    padding-top: 69px;
     min-height: 350px;
     background: #ccc url("../img/hero-mobile@1x.jpg") center;
   }
 
   &--catalog {
-    padding-top: 80px;
-    min-height: 190px;
+    padding-top: 94px;
+    min-height: 224px;
     background: #f1f1f1;
   }
 
@@ -17,5 +17,15 @@
     padding-top: 80px;
     min-height: 190px;
     background: #f1f1f1;
+  }
+}
+
+@media #{$tablet-widths} {
+  .main-banner {
+    &--home {
+      padding-top: 151px;
+      min-height: 641px;
+
+    }
   }
 }

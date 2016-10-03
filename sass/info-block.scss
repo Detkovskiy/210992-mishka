@@ -1,5 +1,7 @@
 .info-block {
+  margin-bottom: 31px;
   padding: $wrapper-content;
+  padding-top: 0;
 }
 
 .info-block__wrapper {
@@ -10,7 +12,7 @@
   margin: 0;
   position: relative;
   padding: 10px 0;
-  padding-left: 66px;
+  padding-left: 59px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -19,7 +21,8 @@
   &::before {
     position: absolute;
     content:"";
-    left: 30px;
+    left: -1px;
+    top: 12px;
     width: 40px;
     height: 40px;
     background: url("../img/icon-video.svg") no-repeat center;
@@ -41,9 +44,16 @@
 @media #{$tablet-widths} {
   .info-block {
     padding: $wrapper-content-tablet;
+    padding-top: 0;
+  }
+
+  .info-block__description {
+    font-size: 15px;
+    line-height: 30px;
   }
 
   .info-block__wrapper {
+    padding-bottom: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -56,6 +66,7 @@
   }
 
   .info-block__wrapper-description {
+    padding: 21px 41px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -63,12 +74,16 @@
 }
 
   .info-block__title {
+    padding: 0;
+    padding-top: 19px;
+    font-size: 20px;
+    padding-left: 63px;
 
     &::before {
       position: absolute;
       content:"";
-      left: -4px;
-      top: 0;
+      left: -6px;
+      top: 11px;
       width: 40px;
       height: 40px;
       background: url("../img/icon-video.svg") no-repeat center;
@@ -78,41 +93,47 @@
 
 @media #{$desktop-widths} {
   .info-block {
+    margin-bottom: 76px;
     @include clearfix();
   }
 
   .info-block__wrapper {
+    padding: 0;
     flex-direction: row;
   }
 
   .info-block__video {
     flex-basis: 682px;
-    height: 450px;
+    height: 456px;
     background: #ccc;
   }
 
   .info-block__description {
+    flex-grow: 1;
     margin: 0;
     font-size: 15px;
     line-height: 30px;
   }
 
   .info-block__wrapper-description {
-    justify-content: space-around;
-    flex-basis: 350px;
+    padding: 60px 55px;
+    justify-content: space-between;
+    flex-basis: 342px;
   }
 
   .info-block__title {
-    margin-top: 50px;
+    margin-bottom: 32px;
+    padding: 0;
+    padding-top: 23px;
+    margin-top: 16px;
     position: relative;
-    padding-left: 0;
-    padding-right: 150px;
+
 
     &::before {
       position: absolute;
       content:"";
-      left: -3px;
-      top: -39px;
+      left: -4px;
+      top: -35px;
       width: 40px;
       height: 40px;
       background: url("../img/icon-video.svg") no-repeat center;
@@ -126,20 +147,18 @@
   }
 
   .info-block__video {
-    margin-top: 100px;
+    margin-top: 97px;
+    min-height: 141px;
     background: #ccc;
   }
 
   .info-block__description {
-    margin-bottom: 20px;
+    margin-bottom: 49px;
   }
 
   .info-block__title {
     position: absolute;
     top: 14px;
 
-    &::before {
-      left: 7px;
-    }
   }
 }

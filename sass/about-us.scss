@@ -1,5 +1,6 @@
 .about-us {
   padding: $wrapper-content;
+
 }
 
 .about-us__title {
@@ -11,11 +12,12 @@
 }
 
 .about-us__list {
+  margin: 0;
   @include reset-ul;
 }
 
 .about-us__item {
-  padding-top: 80px;
+  padding-top: 83px;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
@@ -27,46 +29,78 @@
   }
 
   &--style {
-    background: url("../img/icon-feature-3.svg") no-repeat 0px 41px;
+    background: url("../img/icon-feature-3.svg") no-repeat 0px 33px;
   }
 
   &--like {
-    background: url("../img/icon-feature-5.svg") no-repeat 7px 41px;
+    background: url("../img/icon-feature-5.svg") no-repeat 7px 37px;
   }
 
   &--handmade {
-    background: url("../img/icon-feature-2.svg") no-repeat 7px 34px;
+    background: url("../img/icon-feature-2.svg") no-repeat 4px 34px;
   }
 
   &--manufacturer {
-    background: url("../img/icon-feature-4.svg") no-repeat 0px 41px;
+    background: url("../img/icon-feature-4.svg") no-repeat -5px 35px;
   }
 
   &--wrap {
-    background: url("../img/icon-feature-6.svg") no-repeat 7px 38px;
+    background: url("../img/icon-feature-6.svg") no-repeat 3px 33px;
   }
   /*-----  End of MODIFICATORS  ------*/
 }
 
 @media #{$tablet-widths} {
   .about-us {
+    margin-bottom: 23px;
     padding: $wrapper-content-tablet;
+    padding-top: 30px;
+    padding-left: 44px;
   }
+
   .about-us__title {
+    margin-bottom: 16px;
+    margin-top: 59px;
     font-size: 43px;
     line-height: 50px;
   }
+
   .about-us__list {
-    -moz-column-count: 2;
-    -moz-column-gap: 10px;
-    -webkit-column-count: 2;
-    -webkit-column-gap: 10px;
-    column-count: 2;
-    column-gap: 63px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
+
   .about-us__item {
-    width: 84%;
-    margin: 5px;
+    padding-left: 5px;
+    padding-right: 37px;
+    padding-top: 87px;
+    width: 50%;
+    min-height: 156px;
+    font-size: 20px;
+
+      &:nth-child(1) {
+        order: 1;
+      }
+
+      &:nth-child(2) {
+        order: 3;
+      }
+
+      &:nth-child(3) {
+        order: 5;
+      }
+
+      &:nth-child(4) {
+        order: 2;
+      }
+      &:nth-child(5) {
+        order: 4;
+      }
+      &:nth-child(6) {
+        order: 6;
+      }
   }
 }
 
