@@ -4,6 +4,7 @@
 }
 
 .about-us__title {
+  margin-top: 11px;
   margin-bottom: 0;
   font-size: 25px;
   line-height: 30px;
@@ -106,14 +107,21 @@
 
 @media #{$desktop-widths} {
   .about-us {
+    padding-top: 67px;
     padding-left: 225px;
   }
+
+  .about-us__list {
+    justify-content: flex-start;
+  }
+
   .about-us__title {
     font-size: 53px;
     line-height: 57px;
   }
   .about-us__item {
-    width: 73%;
+    padding-right: 44px;
+    width: 40%;
     font-size: 20px;
   }
 }

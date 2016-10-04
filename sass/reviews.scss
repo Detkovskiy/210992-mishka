@@ -88,9 +88,9 @@
 
   .reviews__arrows {
     position: absolute;
-    top: 10px;
+    top: 360px;
     right: 50px;
-    width: 167px;
+    width: 174px;
   }
 
   .reviews__arrow {
@@ -103,7 +103,7 @@
     padding-left: 225px;
 
     &--margin-bottom {
-      margin-bottom: 200px;
+      margin-bottom: 235px;
     }
   }
 
@@ -113,6 +113,14 @@
   }
 
   .reviews__btn {
-    top: 92px;
+    top: 90px;
+  }
+
+  .reviews__arrows {
+    top: 319px;
+  }
+
+  .reviews__content {
+    margin-bottom: 40px;
   }
 }

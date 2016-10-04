@@ -114,10 +114,10 @@
 
 @media #{$desktop-widths} {
   .product-item {
+    padding-top: 135px;
     padding-left: 225px;
   }
   .product-item__title {
-
     display: block;
     float: left;
     width: 700px;
@@ -131,18 +131,26 @@
     width: 34%;
   }
   .product-item__description {
+    margin-bottom: 46px;
     font-size: 17px;
     line-height: 30px;
   }
+
+  .product-item__options {
+    margin: 0;
+    margin-bottom: 71px;
+  }
+
   .product-item__price {
     font-size: 20px;
     line-height: 24px;
   }
   .product-item__header {
+    margin-bottom: 51px;
     position: relative;
   }
   .product-item__feature {
     position: absolute;
-    left: -140px;
+    left: -143px;
   }
 }

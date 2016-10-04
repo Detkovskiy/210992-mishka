@@ -33,6 +33,39 @@ fieldset {
   margin: 0;
 }
 
+input {
+  outline: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder { font-size: 17px;
+                              line-height: 18px;
+                              font-weight: 400;
+                              color: rgba(68, 68, 68, 0.3); }
+::-moz-placeholder          { font-size: 17px;
+                              line-height: 18px;
+                              font-weight: 400;
+                              color: rgba(68, 68, 68, 0.3); }
+:-ms-input-placeholder      { font-size: 17px;
+                              line-height: 18px;
+                              font-weight: 400;
+                              color: rgba(68, 68, 68, 0.3); }
+
+@media #{$tablet-widths} {
+  ::-webkit-input-placeholder { padding-left: 15px;
+                                font-size: 19px;
+                                line-height: 18px; }
+  ::-moz-placeholder          { padding-left: 15px;
+                                font-size: 19px;
+                                line-height: 18px; }
+  :-ms-input-placeholder      { padding-left: 15px;
+                                font-size: 19px;
+                                line-height: 18px; }
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

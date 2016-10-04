@@ -1,5 +1,4 @@
 .text-field {
-  display: block;
   margin-bottom: 22px;
   font-size: 17px;
   line-height: 18px;
@@ -16,8 +15,9 @@
 }
 
 .text-field__input {
-  margin-top: 15px;
+  margin-top: 10px;
   padding: 10px 0;
+  padding-bottom: 15px;
   width: 100%;
   display: block;
   border: none;
@@ -27,19 +27,22 @@
 .text-field__textarea {
   padding: 10px 10px;
   width: 100%;
+  min-height: 142px;
   resize: none;
   border: solid 2px $text-color-content;
 }
 
 @media #{$tablet-widths} {
   .text-field {
+    margin-bottom: 37px;
+    padding-left: 2px;
     display: flex;
     line-height: 22px;
+    font-size: 19px;
   }
 
   .text-field__input {
-    display: inline-block;
-    vertical-align: top;
+    margin-top: 7px;
     font-size: 19px;
 
     &--background {
@@ -47,12 +50,15 @@
     }
 
     &--flex {
+      margin-top: 0px;
       margin-left: 27px;
       padding: 0;
+      padding-bottom: 15px;
     }
   }
 
   .text-field__textarea {
+    min-height: 144px;
     font-size: 19px;
     line-height: 18px;
   }
