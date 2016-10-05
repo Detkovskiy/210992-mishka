@@ -1,7 +1,7 @@
 .social-block {
   @include reset-ul;
   margin-bottom: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
   border-bottom: solid 1px #e5e5e5;
   font-size: 0;
   text-align: center;
@@ -10,7 +10,7 @@
 .social-block__icon {
   display: inline-block;
   vertical-align: top;
-  margin-right: 40px;
+  margin-right: 34px;
 
   &:last-child {
     margin-right: 0;

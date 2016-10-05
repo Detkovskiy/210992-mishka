@@ -1,5 +1,6 @@
 .contact {
    padding: $wrapper-content;
+   padding-top: 57px;
 }
 
 .contact__title {
@@ -29,16 +30,23 @@
 }
 
 .contact__value {
+  margin-bottom: 11px;
   padding: 10px 0;
   margin-left: 80px;
   }
 
+.contact__wrapper {
+  margin-bottom: 27px;
+}
+
 @media #{$tablet-widths} {
   .contact {
     padding: $wrapper-content-tablet;
+    padding-bottom: 0;
   }
 
   .contact__title {
+    margin-bottom: 39px;
     font-size: 43px;
     line-height: 50px;
   }
@@ -55,10 +63,15 @@
   .contact__mail-link {
     margin-right: 60px;
   }
+
+  .contact__wrapper {
+    margin-bottom: 35px;
+  }
 }
 
 @media #{$desktop-widths} {
   .contact {
+    margin-bottom: 53px;
     position: relative;
     padding-left: 225px;
   }

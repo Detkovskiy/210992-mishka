@@ -1,8 +1,8 @@
 
 
 .user-menu__item {
-  padding: 27px 0;
-  padding-left: 76px;
+  padding-top: 32px;
+  padding-left: 83px;
   border-top: solid 1px #ececec;
 }
 
@@ -82,6 +82,7 @@
   .user-menu-wrapper {
     padding-right: 50px;
     display: flex;
+    min-height: 89px;
   }
   .user-menu__item {
     border-top: none;
