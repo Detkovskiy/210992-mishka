@@ -1,16 +1,19 @@
 .social-block {
   @include reset-ul;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
   padding-bottom: 25px;
+  display: flex;
+  justify-content: flex-start;
   border-bottom: solid 1px #e5e5e5;
   font-size: 0;
-  text-align: center;
 }
 
 .social-block__icon {
-  display: inline-block;
-  vertical-align: top;
-  margin-right: 34px;
+  margin-right: 31px;
+
+  &:first-child {
+    margin-left: 54px;
+  }
 
   &:last-child {
     margin-right: 0;
@@ -39,11 +42,22 @@
 
 @media #{$tablet-widths} {
   .social-block {
-    margin-left: 100px;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    display: inline-block;
-    vertical-align: top;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    width: 34%;
     border: none;
+  }
+
+  .social-block__icon {
+    margin-right: 31px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

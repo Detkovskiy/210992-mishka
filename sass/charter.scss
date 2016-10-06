@@ -1,12 +1,125 @@
-@media #{$tablet-widths} {
-  .charters {
-    @include clearfix;
-  }
-  
-  .charter {
-    display: block;
-    width: 50%;
-    float: left;
+.charter {
+  padding: 26px 90px 26px 30px;
+  width: 100%;
+  min-height: 103px;
 
+  /* MODIFICATORS */
+  &--interior {
+    background-color: #63d1bb;
+
+    &:hover {
+      background-color: #59d5bc;
+    }
+  }
+
+  &--toy {
+    background: #56c3b2;
+
+    &:hover {
+      background-color: #46c1ae;
+    }
+  }
+  /*-----  End of MODIFICATORS  ------*/
+}
+
+.charter__link {
+  position: relative;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--interior {
+    &:after {
+      position: absolute;
+      left: 213px;
+      top: -3px;
+      content: "";
+      display: block;
+      width: 40px;
+      height: 62px;
+      background: url("../img/icon-interior.svg") no-repeat center;
+      opacity: 0.5;
+    }
+  }
+
+  &--toy {
+    &:after {
+      position: absolute;
+      left: 203px;
+      top: -5px;
+      content: "";
+      display: block;
+      width: 60px;
+      height: 60px;
+      background: url("../img/icon-toy.svg") no-repeat center;
+      opacity: 0.5;
+    }
+  }
+}
+
+.charter:hover .charter__link--interior:after {     // вопрос!!! синтаксис
+  opacity: 0.7;
+}
+
+.charter:hover .charter__link--toy:after {
+  opacity: 0.7;
+}
+
+.charter:active .charter__link--interior:after {     // вопрос!!! синтаксис
+  opacity: 0.3;
+}
+
+.charter:active .charter__link--toy:after {
+  opacity: 0.3;
+}
+
+@media #{$tablet-widths} {
+  .charter {
+    padding-top: 28px;
+    padding-left: 36px;
+    width: 50%;
+    min-height: 117px;
+  }
+
+  .charter__link {
+    font-size: 20px;
+    line-height: 30px;
+    &--interior {
+      &:after {
+        left: 223px;
+        top: 0;
+      }
+    }
+
+    &--toy {
+      &:after {
+        left: 205px;
+        top: 3px;
+      }
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+  .charter__link {
+    &--interior {
+      &:after {
+        left: 414px;
+        top: 0;
+      }
+    }
+
+    &--toy {
+      &:after {
+        left: 394px;
+        top: 0;
+      }
+    }
   }
 }

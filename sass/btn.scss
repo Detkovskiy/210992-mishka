@@ -5,7 +5,7 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 16px;
   font-weight: 700;
   color:$text-color-content;
@@ -22,6 +22,16 @@
     width: 100%;
     background: #fff;
    }
+
+  &:hover {
+    background: #444444;
+    color: #fff;
+  }
+
+  &:active {
+    background: #444444;
+    color: rgba(255, 255, 255, 0.3);
+  }
    /*-----  End of MODIFICATORS  ------*/
 }
 

@@ -1,10 +1,12 @@
 .map {
+  margin-bottom: 40px;
   margin-left: -30px;
   width: 320px;
   height: 457px;
 }
 @media #{$tablet-widths} {
   .map {
+    margin-bottom: 56px;
     margin-left: -50px;
     width: 768px;
   }

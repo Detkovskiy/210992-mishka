@@ -52,6 +52,7 @@
 
 @media #{$desktop-widths} {
   .page-header__logo {
+    padding-top: 9px;
     padding-left: 0;
     order: 2;
     text-align: center;
@@ -61,23 +62,3 @@
     order: 4;
   }
 }
-
-/*
-
-@media #{$tablet-widths} {
-  .page-header {
-    min-height: 89px;
-    border-bottom: solid 1px #e7e7e7;
-
-    display: flex;
-    justify-content: center;
-
-    align-items: center;
-  }
-  .page-header__logo {
-    padding-left: 50px;
-    text-align: left;
-    display: none;
-  }
-}
-*/
