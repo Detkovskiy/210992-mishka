@@ -27,6 +27,7 @@
 
 @media #{$desktop-widths} {
   .charters {
+    margin-bottom: 126px;
     &:after {
       background-size: 1167px;
     }

@@ -1,63 +1,52 @@
 .social-block {
   @include reset-ul;
+  padding: 2px 42px 23px;
   margin-bottom: 23px;
-  padding-bottom: 25px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   border-bottom: solid 1px #e5e5e5;
   font-size: 0;
-}
-
-.social-block__icon {
-  margin-right: 31px;
-
-  &:first-child {
-    margin-left: 54px;
-  }
-
-  &:last-child {
-    margin-right: 0;
-  }
 }
 
 .social-block__link {
   display: block;
   width: 28px;
   height: 28px;
+}
 
-  /* MODIFICATORS */
-  &--in {
-    background: url("../img/icon-insta.svg") no-repeat center;
-  }
+.social-block__link-in,
+.social-block__link-fb,
+.social-block__link-tw {
+  fill: #231f20;
+}
 
-  &--fb {
-    background: url("../img/icon-fb.svg") no-repeat center;
-  }
+.social-block__link:hover .social-block__link-in,
+.social-block__link:hover .social-block__link-fb,
+.social-block__link:hover .social-block__link-tw {
+  fill: rgba(70, 193, 174, 1);
+}
 
-  &--tw {
-    background: url("../img/icon-twitter.svg") no-repeat center;
-  }
-  /*-----  End of MODIFICATORS  ------*/
+.social-block__link:active .social-block__link-in,
+.social-block__link:active .social-block__link-fb,
+.social-block__link:active .social-block__link-tw {
+  fill: rgba(70, 193, 174, 0.3);
 }
 
 @media #{$tablet-widths} {
   .social-block {
     margin: 0;
     padding: 0;
-    justify-content: center;
+    padding-left: 38px;
+    padding-right: 28px;
+    justify-content: space-around;;
     width: 34%;
     border: none;
   }
+}
 
-  .social-block__icon {
-    margin-right: 31px;
-
-    &:first-child {
-      margin-left: 0;
-    }
-
-    &:last-child {
-      margin-right: 0;
-    }
+@media #{$desktop-widths} {
+  .social-block {
+    padding-left: 100px;
+    padding-right: 90px;
   }
 }

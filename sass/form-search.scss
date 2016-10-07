@@ -1,7 +1,7 @@
 .form-search {
   position: relative;
   width: 320px;
-  left: -76px;
+  left: -29px;
   padding-top: 20px;
 
   &--closed {
@@ -28,14 +28,13 @@
 @media #{$tablet-widths} {
   .form-search {
     position: absolute;
-    top: 0;
-    left: 50px;
+    top: 79px;
+    left: 96px;
   }
 }
 
 @media #{$desktop-widths} {
   .form-search {
-    top: 70px;
-    left: 446px;
+    left: 478px;
   }
 }

@@ -8,6 +8,19 @@
   text-align: center;
 }
 
+.page-header__logo-mobile,
+.page-header__logo-tablet,
+.page-header__logo-desktop {
+
+  &:hover {
+    fill: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    fill: rgba(0, 0, 0, 0.3);
+  }
+}
+
 .page-header__delivery {
   font-size: 15px;
   line-height: 24px;
@@ -28,8 +41,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    min-height: 89px;
   }
+  
   .page-header__logo {
     padding-top: 22px;
     padding-left: 50px;

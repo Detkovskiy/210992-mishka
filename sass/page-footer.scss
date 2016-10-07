@@ -51,7 +51,6 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-end;
-
   }
 
   .page-footer__developer-wrapper {
@@ -79,6 +78,10 @@
 
 @media #{$desktop-widths} {
   .page-footer {
-    padding: 61px 30px;
+    padding: 49px 30px;
+  }
+
+  .page-footer__developer {
+    margin-left: 162px;
   }
 }

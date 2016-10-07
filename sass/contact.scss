@@ -51,16 +51,18 @@
 
 @media #{$tablet-widths} {
   .contact {
-    padding: $wrapper-content-tablet;
+    padding: 13px 50px;
     margin-bottom: 58px;
     padding-bottom: 0;
 
   }
 
   .contact__title {
-    margin-bottom: 49px;
+    padding: 20px 80px 20px 0;
+    margin-bottom: 27px;
     font-size: 43px;
     line-height: 50px;
+    background: url("../img/icon-flag.svg") no-repeat right;
   }
 
   .contact__address {
@@ -83,18 +85,27 @@
 
 @media #{$desktop-widths} {
   .contact {
-    margin-bottom: 53px;
+    margin-bottom: 106px;
     position: relative;
     padding-left: 225px;
   }
 
   .contact__title {
+    position: relative;
+    left: -113px;
+    padding-left: 109px;
+    margin-bottom: 29px;
+    background-position: left;
     font-size: 53px;
     line-height: 57px;
   }
 
   .contact__value {
-    margin-left: 90px;
+    margin-left: 78px;
     float: none;
+  }
+
+  .contact__wrapper {
+    margin-bottom: 50px;
   }
 }
