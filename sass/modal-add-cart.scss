@@ -1,5 +1,5 @@
 .modal-add-cart {
-  position: absolute;
+  position: fixed;
   top: 300px;
   padding: $wrapper-content;
   width: 320px;
@@ -74,8 +74,7 @@
 @media #{$tablet-widths} {
   .modal-add-cart {
     padding: 33px 108px;
-    top: 1530px;
-    left: 202px;
+    margin-left: 10%;
     width: 566px;
     height: 339px;
   }
@@ -96,7 +95,6 @@
 
 @media #{$desktop-widths} {
   .modal-add-cart {
-    top: 1113px;
-    left: 394px;
+    margin-left: 15%;
   }
 }
