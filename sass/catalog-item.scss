@@ -1,6 +1,8 @@
 .catalog-item {
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 31px;
   border: solid 1px #ededed;
 }
@@ -10,8 +12,10 @@
 }
 
 .catalog-item__description-wrapper {
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 22px 28px;
 }
 
@@ -48,8 +52,10 @@
 
 .catalog-item__block-price {
   margin-bottom: 2px;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   width: 100%;
   padding-top: 21px;
   border-top: solid 1px #ececec;
@@ -84,7 +90,8 @@
 @media #{$tablet-widths} {
   .catalog-item {
     margin-bottom: 56px;
-    flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     height: 333px;
   }
 
@@ -118,13 +125,15 @@
 
   .catalog-item__description-wrapper {
     padding: 25px 28px;
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
     width: 334px;
   }
 
   .catalog-item__description {
     padding-top: 3px;
-    flex-grow: 1;
+    -ms-flex-positive: 1;
+        flex-grow: 1;
     font-size: 15px;
     line-height: 30px;
 
@@ -138,7 +147,8 @@
   .catalog-item {
     margin-right: 50px;
     height: auto;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 
     &:last-child {
       margin-right: 0;
@@ -169,7 +179,8 @@
   .catalog-item__description-wrapper {
     padding: 25px 28px;
     width: 315px;
-    justify-content: space-between;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
     min-height: 194px;
   }
 

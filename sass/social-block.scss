@@ -2,8 +2,10 @@
   @include reset-ul;
   padding: 2px 42px 23px;
   margin-bottom: 23px;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   border-bottom: solid 1px #e5e5e5;
   font-size: 0;
 }
@@ -38,7 +40,8 @@
     padding: 0;
     padding-left: 38px;
     padding-right: 28px;
-    justify-content: space-around;;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;;
     width: 34%;
     border: none;
   }

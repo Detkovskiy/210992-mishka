@@ -16,7 +16,9 @@
   position: relative;
   top: 5px;
   margin-right: 21px;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   fill: #d3d2d2;
 }
 
@@ -79,13 +81,15 @@
 @media #{$tablet-widths} {
   .user-menu {
     position: initial;
-    order: 2;
+    -ms-flex-order: 2;
+        order: 2;
     width: auto;
     border-bottom: solid 1px #ececec;
   }
 
   .user-menu-wrapper {
     padding-right: 50px;
+    display: -ms-flexbox;
     display: flex;
   }
 
@@ -93,9 +97,12 @@
     padding: 30px 0 28px;
     border-top: none;
     border-left: solid 1px #ececec;
+    display: -ms-flexbox;
     display: flex;
-    align-items: baseline;
-    justify-content: space-around;
+    -ms-flex-align: baseline;
+        align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
 
     &--search {
       min-width: 83px;
@@ -125,7 +132,8 @@
 
 @media #{$desktop-widths} {
   .user-menu {
-    order: 3;
+    -ms-flex-order: 3;
+        order: 3;
   }
 
   .user-menu__link {

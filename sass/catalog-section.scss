@@ -9,14 +9,15 @@
     padding-top: 70px;
     padding-bottom: 0;
   }
-
 }
 
 @media #{$desktop-widths} {
   .catalog-section {
     padding-top: 112px;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     font-size: 0;
   }
 

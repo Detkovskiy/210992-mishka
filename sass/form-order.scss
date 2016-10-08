@@ -1,11 +1,15 @@
 .form-order {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
 .form-order__flex-wrapper {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
 }
 
 .form-order__text {
@@ -114,18 +118,23 @@ input[type="email"]:invalid + .form-order__field-title-icon-email {
 
   .form-order__flex-wrapper {
     &--color {
-      flex-wrap: wrap;
-      flex-direction: row;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -ms-flex-direction: row;
+          flex-direction: row;
     }
 
     &--button {
-      flex-direction: row;
-      justify-content: space-between;
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
     }
   }
 
   .form-order__field {
-    flex-direction: row;
+    -ms-flex-direction: row;
+        flex-direction: row;
     position: relative;
     margin-bottom: 0;
     padding: 77px 0 21px;
@@ -206,7 +215,8 @@ input[type="email"]:invalid + .form-order__field-title-icon-email {
 
     &--bottom {
       margin: 8px 50px 0 0;
-      order: 2;
+      -ms-flex-order: 2;
+          order: 2;
     }
   }
 .form-order__field-title-icon-email {

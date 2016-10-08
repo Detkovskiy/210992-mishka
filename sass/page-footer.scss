@@ -1,7 +1,9 @@
 .page-footer {
   padding: 26px 30px;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   background: #f1f1f1;
 }
 
@@ -41,16 +43,21 @@
 }
 
 .page-footer__developer-wrapper {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
 }
 
 @media #{$tablet-widths} {
   .page-footer {
     padding: 49px 30px;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-end;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-align: end;
+        align-items: flex-end;
   }
 
   .page-footer__developer-wrapper {

@@ -29,7 +29,7 @@
       background: #ccc url("../img/hero-desktop@1x.jpg") center;
 
       @media #{$retina} {
-        background-image: #ccc url("../img/hero-mobile@2x.jpg");
+        background-image: url("../img/hero-mobile@2x.jpg");
       }
     }
 
