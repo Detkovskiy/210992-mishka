@@ -8,6 +8,23 @@
   text-align: center;
 }
 
+.page-header__logo-tablet,
+.page-header__logo-desktop {
+    display: none;
+}
+
+@media (min-width: 767px) {
+    .page-header__logo-mobile { display: none; }
+}
+
+@media (min-width: 768px) and (max-width: 1149px) {
+    .page-header__logo-tablet { display: initial; }
+}
+
+@media (min-width: 1150px) {
+    .page-header__logo-desktop { display: initial; }
+}
+
 .page-header__logo-mobile,
 .page-header__logo-tablet,
 .page-header__logo-desktop {
@@ -42,7 +59,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  
+
   .page-header__logo {
     padding-top: 22px;
     padding-left: 50px;

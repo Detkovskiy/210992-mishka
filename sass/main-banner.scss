@@ -35,22 +35,33 @@
 
     &--catalog {
       padding-top: 93px;
-      min-height: 223px;
+      min-height: 234px;
+      background: #f1f1f1 url("../img/bg-zigzag-fill.svg") no-repeat bottom;
+      background-size: 790px auto;
     }
 
     &--form {
       padding-top: 91px;
-      min-height: 215px;
+      min-height: 237px;
+      background: #f1f1f1 url("../img/bg-zigzag-fill.svg") no-repeat bottom;
+      background-size: 790px auto;
     }
   }
 }
 
 @media #{$desktop-widths} {
   .main-banner {
+    &--catalog {
+      min-height: 270px;
+      background: #f1f1f1 url("../img/bg-zigzag-fill.svg") no-repeat bottom;
+      background-size: 1174px auto;
+    }
 
     &--form {
       padding-top: 91px;
-      min-height: 249px;
+      min-height: 269px;
+      background: #f1f1f1 url("../img/bg-zigzag-fill.svg") no-repeat bottom;
+      background-size: 1174px auto;
     }
   }
 }

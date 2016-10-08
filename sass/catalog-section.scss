@@ -6,7 +6,7 @@
 @media #{$tablet-widths} {
   .catalog-section {
     padding: $wrapper-content-tablet;
-    padding-top: 80px;
+    padding-top: 70px;
     padding-bottom: 0;
   }
 
@@ -14,7 +14,9 @@
 
 @media #{$desktop-widths} {
   .catalog-section {
-    padding-top: 157px;
+    padding-top: 112px;
+    display: flex;
+    justify-content: space-around;
     font-size: 0;
   }
 
