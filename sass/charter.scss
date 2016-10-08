@@ -21,12 +21,17 @@
 }
 
 .charter__link {
+
+  display: block;
+  text-decoration: none;
+}
+
+.charter__name {
   position: relative;
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
   color: #fff;
-  text-decoration: none;
 
   &:active {
     color: rgba(255, 255, 255, 0.3);
@@ -61,19 +66,23 @@
   }
 }
 
-.charter:hover .charter__link--interior:after {     /* вопрос!!! синтаксис*/
+.charter:active .charter__name {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.charter:hover .charter__name--interior:after {     /* вопрос!!! синтаксис*/
   opacity: 0.7;
 }
 
-.charter:hover .charter__link--toy:after {
+.charter:hover .charter__name--toy:after {
   opacity: 0.7;
 }
 
-.charter:active .charter__link--interior:after {     /* вопрос!!! синтаксис*/
+.charter:active .charter__name--interior:after {     /* вопрос!!! синтаксис*/
   opacity: 0.3;
 }
 
-.charter:active .charter__link--toy:after {
+.charter:active .charter__name--toy:after {
   opacity: 0.3;
 }
 
@@ -85,7 +94,7 @@
     min-height: 117px;
   }
 
-  .charter__link {
+  .charter__name {
     font-size: 20px;
     line-height: 30px;
     &--interior {
@@ -105,7 +114,7 @@
 }
 
 @media #{$desktop-widths} {
-  .charter__link {
+  .charter__name {
     &--interior {
       &:after {
         left: 414px;
