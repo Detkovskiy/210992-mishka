@@ -1,5 +1,9 @@
 .page-footer {
-  padding: $wrapper-content;
+  padding: 26px 30px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
   background: #f1f1f1;
 }
 
@@ -7,47 +11,84 @@
   display: none;
 }
 
-.page-footer__copiyright {
-  margin: 0;
+.page-footer__developer {
+  margin: 0 23px 0 37px;
+  padding: 5px 0;
   font-size: 19px;
   line-height: 20px;
   font-weight: 700;
   color: $text-color-title;
-  text-align: center;
+
 }
 
-.page-footer__copiyright-link {
-  margin-left: 24px;
-  width: 27px;
-  height: 34px;
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 0;
-  background: url("../img/logo-htmlacademy.svg") no-repeat center;
+.page-footer__developer-link {
+  position: relative;
+}
+
+.page-footer__developer-logo {
+  position: absolute;
+  top: -7px;
+}
+
+.page-footer__developer-color {
+  fill: #63d1bb;
+}
+
+.page-footer__developer-link:hover .page-footer__developer-color {
+  fill: #46c1ae;
+}
+
+.page-footer__developer-link:active .page-footer__developer-color {
+  fill: rgba(70, 193, 174, 0.3);
+}
+
+.page-footer__developer-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
 }
 
 @media #{$tablet-widths} {
   .page-footer {
-    padding: 61px 30px;
-    text-align: center;
-    @include clearfix();
+    padding: 49px 30px;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-align: end;
+        align-items: flex-end;
   }
 
-  .page-footer__copiyright {
-    display: inline-block;
-    vertical-align: top;
-    float: right;
+  .page-footer__developer-wrapper {
+    width: 34%;
   }
-  
+
   .page-footer__logo {
-    display: inline-block;
-    vertical-align: top;
-    float: left;
+    padding-left: 22px;
+    display: block;
+    width: 33%;
+  }
+
+  .page-footer__logo-color {
+    fill: #231f20;
+  }
+
+  .page-footer__logo-link:hover .page-footer__logo-color {
+    fill: #46c1ae;
+  }
+
+  .page-footer__logo-link:active .page-footer__logo-color {
+    fill: rgba(70, 193, 174, 0.3);
   }
 }
 
 @media #{$desktop-widths} {
   .page-footer {
-    padding: 61px 30px;
+    padding: 49px 30px;
+  }
+
+  .page-footer__developer {
+    margin-left: 162px;
   }
 }

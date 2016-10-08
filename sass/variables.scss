@@ -17,7 +17,7 @@ $mobile-widths-only: (max-width: 767px);
 $tablet-widths-only: (max-width: 1149px);
 $tablet-widths: (min-width: 768px);
 $desktop-widths: (min-width: 1150px);
-
+$retina: ((min-resolution: 144dpi), (min-resolution: 1.5dppx));
 /* Сброс отступа и стиля списка */
 @mixin reset-ul {
   padding: 0;

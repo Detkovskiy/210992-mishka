@@ -25,6 +25,14 @@
   &--toy {
     top: -2px;
   }
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:active {
+    border-color: #c8c8c8;
+  }
 }
 
 .radio-btn input[type="radio"]:checked + .radio-btn__indicator::before {

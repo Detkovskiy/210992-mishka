@@ -15,6 +15,14 @@
   font-weight: 700;
   color: #000;
   text-decoration: none;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 @media #{$desktop-widths} {
@@ -22,12 +30,14 @@
     position: absolute;
     top: 79px;
     left: 0;
+    display: -ms-flexbox;
     display: flex;
-    order: 4;
+    -ms-flex-order: 4;
+        order: 4;
 
   .sub-menu__item {
       &:last-child {
-        padding-left: 66px;
+        padding-left: 61px;
       }
     }
   }

@@ -1,12 +1,168 @@
-@media #{$tablet-widths} {
-  .charters {
-    @include clearfix;
-  }
-  
-  .charter {
-    display: block;
-    width: 50%;
-    float: left;
+.charter {
+  position: relative;
+  padding: 26px 90px 26px 30px;
+  width: 100%;
+  min-height: 103px;
+  transition: 0.4s;
 
+  &--interior {
+    background-color: #63d1bb;
+    transition: 0.4s;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 0;
+      height: 5px;
+      width: 100%;
+      background-color: #63d1bb;
+      transition: 0.2s;
+    }
+
+    &:hover {
+      background-color: #59d5bc;
+      padding-top: 21px;
+
+      &::before {
+        top: -5px;
+        background-color: #59d5bc;
+      }
+    }
+  }
+
+  &--toy {
+    background: #56c3b2;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 0;
+      height: 5px;
+      width: 100%;
+      background-color: #56c3b2;
+      transition: 0.2s;
+    }
+
+    &:hover {
+      padding-top: 21px;
+      background-color: #46c1ae;
+
+      &::before {
+        top: -5px;
+        background-color: #46c1ae;
+      }
+    }
+  }
+}
+
+.charter__link {
+  display: block;
+  text-decoration: none;
+}
+
+.charter__name {
+  position: relative;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #fff;
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--interior {
+    &:after {
+      position: absolute;
+      left: 213px;
+      top: -3px;
+      content: "";
+      display: block;
+      width: 40px;
+      height: 62px;
+      background: url("../img/icon-interior.svg") no-repeat center;
+      opacity: 0.5;
+    }
+  }
+
+  &--toy {
+    &:after {
+      position: absolute;
+      left: 203px;
+      top: -5px;
+      content: "";
+      display: block;
+      width: 60px;
+      height: 60px;
+      background: url("../img/icon-toy.svg") no-repeat center;
+      opacity: 0.5;
+    }
+  }
+}
+
+.charter:active .charter__name {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.charter:hover .charter__name--interior:after {     /* вопрос!!! синтаксис*/
+  opacity: 0.7;
+}
+
+.charter:hover .charter__name--toy:after {
+  opacity: 0.7;
+}
+
+.charter:active .charter__name--interior:after {     /* вопрос!!! синтаксис*/
+  opacity: 0.3;
+}
+
+.charter:active .charter__name--toy:after {
+  opacity: 0.3;
+}
+
+@media #{$tablet-widths} {
+  .charter {
+    padding-top: 28px;
+    padding-left: 36px;
+    width: 50%;
+    min-height: 117px;
+  }
+
+  .charter__name {
+    font-size: 20px;
+    line-height: 30px;
+    &--interior {
+      &:after {
+        left: 223px;
+        top: 0;
+      }
+    }
+
+    &--toy {
+      &:after {
+        left: 205px;
+        top: 3px;
+      }
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+  .charter__name {
+    &--interior {
+      &:after {
+        left: 414px;
+        top: 0;
+      }
+    }
+
+    &--toy {
+      &:after {
+        left: 394px;
+        top: 0;
+      }
+    }
   }
 }
