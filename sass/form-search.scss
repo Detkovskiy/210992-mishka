@@ -28,13 +28,20 @@
 @media #{$tablet-widths} {
   .form-search {
     position: absolute;
-    top: 79px;
-    left: 96px;
+    padding: 15px 15px;
+    top: 152px;
+    left: 227px;
+    background: rgba(99, 209, 187, 0.6);
+  }
+
+  .form-search__input {
+    height: 50px;
   }
 }
 
 @media #{$desktop-widths} {
   .form-search {
-    left: 478px;
+    left: 370px;
+    width: 403px;
   }
 }

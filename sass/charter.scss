@@ -1,27 +1,63 @@
 .charter {
+  position: relative;
   padding: 26px 90px 26px 30px;
   width: 100%;
   min-height: 103px;
+  transition: 0.4s;
 
   &--interior {
     background-color: #63d1bb;
+    transition: 0.4s;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 0;
+      height: 5px;
+      width: 100%;
+      background-color: #63d1bb;
+      transition: 0.2s;
+    }
 
     &:hover {
       background-color: #59d5bc;
+      padding-top: 21px;
+
+      &::before {
+        top: -5px;
+        background-color: #59d5bc;
+      }
     }
   }
 
   &--toy {
     background: #56c3b2;
 
+    &::before {
+      content: "";
+      position: absolute;
+      top: 5px;
+      left: 0;
+      height: 5px;
+      width: 100%;
+      background-color: #56c3b2;
+      transition: 0.2s;
+    }
+
     &:hover {
+      padding-top: 21px;
       background-color: #46c1ae;
+
+      &::before {
+        top: -5px;
+        background-color: #46c1ae;
+      }
     }
   }
 }
 
 .charter__link {
-
   display: block;
   text-decoration: none;
 }
