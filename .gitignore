@@ -1,7 +1,7 @@
 .DS_Store
 .idea
 *.ai
-*.log
+*.log*
 *.pdf
 *.psd
 *.sublime*
