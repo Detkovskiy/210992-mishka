@@ -1,10 +1,11 @@
 .DS_Store
 .idea
 *.ai
-*.log
+*.log*
 *.pdf
 *.psd
 *.sublime*
 css/*.css
 node_modules/
 Thumbs.db
+build/
