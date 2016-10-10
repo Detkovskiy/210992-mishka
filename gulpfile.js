@@ -74,16 +74,18 @@ gulp.task("serve", function() {   //задача по запуску серве�
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);     // отслеживание изменения файлов sass и запуск задачи style
-  gulp.watch("js/**/*.js", ["copyhtmljs"]);
+  gulp.watch("js/**/*.js", ["scripts"]);       // при изменении js копируем в build, минифицируем и перезагружаем сервер
   gulp.watch("build/js/**/*.js").on("change", server.reload);
-  gulp.watch("*.html", ["copyhtmljs"]);                // при изменении html запустить зачаду copyhtml
+  gulp.watch("*.html", ["copyhtml"]);                // при изменении html запустить зачаду copyhtml
   gulp.watch("build/*.html").on("change", server.reload);  // при изменении файлов html в папке build  перезагрузить сервер
 });
 
-gulp.task("copyhtmljs", function() {
-  return gulp.src(["*.html", "js/**"])        // откуда копировать html и js
+gulp.task("copyhtml", function() {
+  return gulp.src("*.html")        // откуда копировать html и js
   .pipe(gulp.dest("build/"));      // куда копировать файлы
 });
+
+
 //-----------------------------------------------
 gulp.task("copy", function() {     // задача по копированию исходных файлов сайта в папку build
   return gulp.src([
